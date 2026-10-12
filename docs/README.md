@@ -1,7 +1,13 @@
 # ShipperXL Help
 
-Welcome to the ShipperXL help site. Start with the instructions for step-by-step
-guides, or check the release notes to see what changed in each version.
+ShipperXL follows your product from purchase to invoice: agreements, bookings,
+cargo, work orders, inventory, and the bills and invoices that settle up.
 
-- [Instructions](instructions/)
-- [Release Notes](release-notes/)
+- **New to Shipper?** Read [How Shipper Works](instructions/how-shipper-works.md),
+  then [Getting Started](instructions/getting-started.md).
+- **Looking for steps?** See the [Instructions](instructions/).
+- **What changed?** See the [Release Notes](release-notes/).
+
+In the app, the **?** button on each screen opens help for that screen.
+
+For anything else, email support@shipperxl.com.

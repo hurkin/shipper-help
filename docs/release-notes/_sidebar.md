@@ -1,4 +1,8 @@
 - [Home](../)
 - **Release Notes**
   - [All releases](./)
-  - [1.0.0](1.0.0.md)
+  - [2026.4](2026.4.md)
+  - [2026.3](2026.3.md)
+  - [Database Migrations](2026-05-database-migrations.md)
+  - [2026.2](2026.2.md)
+  - [2026.1](2026.1.md)

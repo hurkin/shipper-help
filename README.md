@@ -9,9 +9,13 @@ Site: https://hurkin.github.io/shipper-help/
 
 - `docs/instructions/`: guides. Add a page, then list it in `docs/instructions/_sidebar.md`.
 - `docs/release-notes/`: one file per release. List it in `docs/release-notes/_sidebar.md` and the table in `README.md`.
-- `docs/context/`: context-sensitive help with no sidebar. `docs/context/A001.md` opens at
-  `https://hurkin.github.io/shipper-help/#/context/A001`.
+- `docs/context/`: context-sensitive help with no sidebar, one file per SHP feature
+  mnemonic (the screen's help button passes it). `docs/context/A004.md` opens at
+  `https://hurkin.github.io/shipper-help/#/context/A004`. The mnemonic appears only
+  in the file name and URL, never in the page text.
 - `docs/assets/`: shared images.
+- Screenshots still to be captured are marked `Screenshot placeholder` with the
+  file name to save them as (`grep -rn "Screenshot placeholder" docs`).
 
 Use relative links and image paths only (e.g. `images/foo.png`, `../`), never paths starting with `/`.
 Each section's `_sidebar.md` links are relative to that section's folder.
