@@ -18,7 +18,7 @@ mean the same record. The booking number from the shipline is its identifier.
    quantities.
 6. Click **Save**.
 
-> **Screenshot placeholder:** the Booking page, General tab, showing the four legs. (save as `images/booking-general.png`)
+![[booking-general.png]]
 
 ## Adding containers
 

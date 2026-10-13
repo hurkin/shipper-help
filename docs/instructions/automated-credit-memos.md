@@ -7,7 +7,7 @@ completed. This takes two things:
    Costs**, and add the amount for the item to credit (for example, a claim item).
    Mark it **Auto Bill**.
 
-   > **Screenshot placeholder:** a sales order line's Variable Costs grid with one row marked Auto Bill. (save as `images/auto-bill-cost.png`)
+   ![[auto-bill-cost.png]]
 
 2. **A scheduled job.** Email support to set up the *Automated Credit Memo* or
    *Automated Work Order* job for your database.

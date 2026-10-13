@@ -17,8 +17,6 @@ container. It ties the work to a cargo or a booking, and its cost becomes a bill
 As the work happens, record **Actual Start** and **Actual Finish**. Finishing a
 work order makes it billable in [Create Bills](../context/W005.md).
 
-> **Screenshot placeholder:** a work order page showing the item, worker, zone, center and key dates. (save as `images/work-order.png`)
-
 ## Plan the week with the scheduler
 
 1. Go to **Processing > Work Order Scheduler**.

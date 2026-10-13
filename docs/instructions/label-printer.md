@@ -5,6 +5,6 @@ barcode labels.
 
 Set the printer's preferences, and its default preferences, as shown below.
 
-> **Screenshot placeholder:** the Zebra printer preferences dialog with the label size and settings. (save as `images/label-printer-settings.png`)
+![[label-printer-settings.png]]
 
 On a kiosk, the label printer must be named **labels**.

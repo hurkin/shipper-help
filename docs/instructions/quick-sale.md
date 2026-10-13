@@ -17,8 +17,6 @@ source *QuickSale*), an outbound cargo and its scale ticket together.
    quantity).
 7. Save, then click **Create Invoice**. The invoice opens. Print or email it.
 
-> **Screenshot placeholder:** the Quick Sale screen with a buyer, one line and a completed scale ticket. (save as `images/quick-sale.png`)
-
 ## Good to know
 
 - **Create Invoice** is available only once the cargo is included and only until an

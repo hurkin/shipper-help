@@ -20,8 +20,6 @@
 7. Click **Save**.
 8. Use **Reports** to print the **Agreement** report and send it to your customer.
 
-> **Screenshot placeholder:** the Sales Order page, Line Items tab, with one line open in its dialog. (save as `images/sales-order-line.png`)
-
 ## Good to know
 
 - An order can be drawn from a sales contract. Pick the contract on **General**,

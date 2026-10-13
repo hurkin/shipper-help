@@ -4,7 +4,7 @@ Shipper follows product from the moment you agree to buy it until it is invoiced
 and posted to accounting. Most screens are one step in that chain. Once you know
 the chain, you can tell what each screen expects and what it changes.
 
-> **Screenshot placeholder:** a simple diagram of the flow below: Agreements → Bookings → Cargo and Work Orders → Inventory → Invoices and Bills → Accounting. (save as `images/information-flow.png`)
+![[information-flow.png]]
 
 ## The building blocks
 

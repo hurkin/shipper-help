@@ -4,7 +4,7 @@ ShipperXL Mobile records inventory by scanning: receiving, moving, processing an
 shipping. The main menu shows only the screens your roles allow. See
 [Install ShipperXL Mobile](install-mobile.md) to get started.
 
-> **Screenshot placeholder:** the mobile app's main menu. (save as `images/mobile-menu.png`)
+![[mobile-menu.png]]
 
 ## ADD, then DONE
 
@@ -22,8 +22,6 @@ Fix or remove the line and try again.
   one location at all times. Moving it moves all of it.
 - **A SKU tag** stands for the SKU as a whole, not a particular load. When you use
   one, you also enter the location and quantity.
-
-> **Screenshot placeholder:** an inventory tag beside a SKU tag. (save as `images/mobile-tags.png`)
 
 ## Work orders
 

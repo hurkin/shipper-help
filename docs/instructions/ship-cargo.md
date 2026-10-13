@@ -26,8 +26,6 @@ a booking are already here. Search by booking or container number.
 9. Enter **Loaded** when loading is finished. Save, then print the **Cargo Bill of
    Lading** or **Scale Weight Ticket** from **Reports**.
 
-> **Screenshot placeholder:** the outbound cargo Inventory tab after scanning tags, showing negative rows. (save as `images/outbound-inventory.png`)
-
 ## Good to know
 
 - Deductions are dated with **Loaded**, or **Delivered to Carrier** if there is no

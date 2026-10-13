@@ -30,6 +30,6 @@ ORDER BY p.Posted DESC
 You can then use `@PaymentReference`, `@PaymentMethod`, `@PaymentAmount` and
 `@PaymentPosted` in the subject and body. These names are case-sensitive.
 
-> **Screenshot placeholder:** a Payment Posted scheduled job with its event, action and Iteration SQL filled in. (save as `images/payment-posted-job.png`)
+![[payment-posted-job.png]]
 
 See also: [Scheduled Jobs](../context/G014.md).

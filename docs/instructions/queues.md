@@ -20,7 +20,7 @@ the record itself.
 **Set Completed** stamps a Completed date on the selected items. Posted items are
 skipped.
 
-> **Screenshot placeholder:** a queue page with a few items selected and the Next Queue button. (save as `images/queue.png`)
+![[queue.png]]
 
 ## Good to know
 

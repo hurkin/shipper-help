@@ -11,7 +11,7 @@ and shipping by scanning.
 1. Tap **SIGN IN**.
 2. Enter your ShipperXL account details and sign in.
 
-> **Screenshot placeholder:** the mobile app's sign-in screen. (save as `images/mobile-sign-in.png`)
+![[mobile-login.png]]
 
 ## Good to know
 

@@ -31,8 +31,6 @@ you why each match was outside your view.
 8. Save, then use **Reports** for the tags, inspection report or scale weight
    ticket.
 
-> **Screenshot placeholder:** the cargo Inventory tab after Add tags, showing the tag rows with SKU, quantity and location. (save as `images/inbound-tags.png`)
-
 ## Good to know
 
 - **A tag with no location isn't in inventory yet.** It waits until it is received:

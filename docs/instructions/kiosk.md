@@ -12,7 +12,7 @@ copies weights from a paper ticket:
 
 See [Install the Kiosk](install-kiosk.md) for hardware and setup.
 
-> **Screenshot placeholder:** the kiosk's main screen. (save as `images/kiosk-home.png`)
+![[kiosk-home.png]]
 
 ## Weighing
 
