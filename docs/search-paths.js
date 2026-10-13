@@ -20,6 +20,7 @@ window.SEARCH_PATHS = [
   '/context/R109',
   '/context/IV03',
   '/context/R125',
+  '/context/D001',
   '/context/R154',
   '/context/R161',
   '/context/R162',
@@ -56,7 +57,6 @@ window.SEARCH_PATHS = [
   '/context/CUSTREPS',
   '/context/D002',
   '/context/S026',
-  '/context/D001',
   '/context/R136',
   '/context/R137',
   '/context/R153',
@@ -215,4 +215,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.2',
   '/release-notes/2026.1'
 ];
-window.SEARCH_VERSION = '95e3d5cc56f6';
+window.SEARCH_VERSION = '215570e2d53f';
