@@ -16,6 +16,19 @@
   <div id="app"></div>
   <script src="search-paths.js"></script>
   <script>
+    // Docsify search reuses its cached index until it expires, whatever pages
+    // were added since. Drop it whenever build-index.py's version changes, and
+    // the old un-namespaced index (built from one section's sidebar).
+    try {
+      if (localStorage.getItem('shipper-help.search.version') !== window.SEARCH_VERSION) {
+        localStorage.removeItem('docsify.search.expires/shipper-help');
+        localStorage.setItem('shipper-help.search.version', window.SEARCH_VERSION);
+      }
+      localStorage.removeItem('docsify.search.index');
+      localStorage.removeItem('docsify.search.expires');
+    } catch (e) {}
+  </script>
+  <script>
     // Framed pages (shipper-ui's help panel) never show the sidebar. Elsewhere,
     // ?sidebar=0 hides it, before the # or in the route
     // (#/context/I001?sidebar=0), and it stays hidden as links are followed.
@@ -32,7 +45,12 @@
       auto2top: true,
       relativePath: true,
       // Every page, not just the sidebar on screen (scripts/build-index.py).
-      search: { paths: window.SEARCH_PATHS || 'auto' },
+      // An hour's cache picks up edits made without rerunning the script.
+      search: {
+        paths: window.SEARCH_PATHS || 'auto',
+        namespace: 'shipper-help',
+        maxAge: 3600000
+      },
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (content) {

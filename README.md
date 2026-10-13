@@ -20,7 +20,9 @@ Site: https://hurkin.github.io/shipper-help/
 After adding, removing or retitling any page, run `python scripts/build-index.py`. It
 rebuilds `docs/context/_sidebar.md` and `docs/search-paths.js`, the list of every page
 search indexes (Docsify search otherwise sees only the sidebar on screen). Pages in the
-other sections are searchable once they are in their `_sidebar.md`.
+other sections are searchable once they are in their `_sidebar.md`. Rerun it after editing
+page text too: it stamps a version that makes browsers rebuild their cached search index
+right away (otherwise edits reach search within an hour).
 
 The sidebar is hidden when the site is framed (shipper-ui's help panel) or opened with
 `?sidebar=0`, e.g. `#/context/A004?sidebar=0`.
