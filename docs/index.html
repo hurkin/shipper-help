@@ -6,7 +6,7 @@
   <title>ShipperXL</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* Context-help pages (#/context/...) are shown without a sidebar */
+    /* No sidebar when framed (shipper-ui's help panel) or asked with ?sidebar=0 */
     body.no-sidebar .sidebar,
     body.no-sidebar .sidebar-toggle { display: none; }
     body.no-sidebar .content { left: 0; transform: none; }
@@ -14,7 +14,16 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="search-paths.js"></script>
   <script>
+    // Framed pages (shipper-ui's help panel) never show the sidebar. Elsewhere,
+    // ?sidebar=0 hides it, before the # or in the route
+    // (#/context/I001?sidebar=0), and it stays hidden as links are followed.
+    var framed = (function () {
+      try { return window.self !== window.top; } catch (e) { return true; }
+    })();
+    var sidebarOff = framed || /[?&]sidebar=(0|false|hide)\b/i.test(location.search);
+
     window.$docsify = {
       name: 'ShipperXL',
       repo: 'hurkin/shipper-help',
@@ -22,10 +31,14 @@
       subMaxLevel: 3,
       auto2top: true,
       relativePath: true,
+      // Every page, not just the sidebar on screen (scripts/build-index.py).
+      search: { paths: window.SEARCH_PATHS || 'auto' },
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (content) {
-            document.body.classList.toggle('no-sidebar', vm.route.path.indexOf('/context/') === 0);
+            var s = String((vm.route.query || {}).sidebar || '').toLowerCase();
+            if (s === '0' || s === 'false' || s === 'hide') sidebarOff = true;
+            document.body.classList.toggle('no-sidebar', sidebarOff);
             return content;
           });
         }
