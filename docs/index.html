@@ -59,6 +59,34 @@
             document.body.classList.toggle('no-sidebar', sidebarOff);
             return content;
           });
+        },
+        // Obsidian image embeds: ![[mobile-menu.png]], ![[queue.png|Queue]] (alt
+        // text), ![[queue.png|400]] or ![[queue.png|400x300]] (size). A bare file
+        // name is in docs/assets/. Written as <img> so the path resolves against
+        // the site root whichever folder the page is in. Code blocks are skipped.
+        function (hook) {
+          function esc(s) {
+            return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+          }
+          function embed(m, target, opt) {
+            var file = target.trim();
+            var src = file.indexOf('/') < 0 ? 'assets/' + file : file.replace(/^\.?\//, '');
+            var alt = file.replace(/^.*\//, '').replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ');
+            var size = '';
+            opt = (opt || '').trim();
+            var dims = /^(\d+)(?:x(\d+))?$/.exec(opt);
+            if (dims) {
+              size = ' width="' + dims[1] + '"' + (dims[2] ? ' height="' + dims[2] + '"' : '');
+            } else if (opt) {
+              alt = opt;
+            }
+            return '<img src="' + esc(encodeURI(src)) + '" alt="' + esc(alt) + '"' + size + '>';
+          }
+          hook.beforeEach(function (content) {
+            return content.split(/(^```[\s\S]*?^```|`[^`\n]*`)/m).map(function (part, i) {
+              return i % 2 ? part : part.replace(/!\[\[([^\]|]+)(?:\|([^\]]*))?\]\]/g, embed);
+            }).join('');
+          });
         }
       ]
     };
