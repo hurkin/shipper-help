@@ -11,7 +11,7 @@ and shipping by scanning.
 1. Tap **SIGN IN**.
 2. Enter your ShipperXL account details and sign in.
 
-![[mobile-login.png]]
+![[mobile-login.png|300]]
 
 ## Good to know
 

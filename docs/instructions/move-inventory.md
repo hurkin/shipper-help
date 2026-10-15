@@ -10,7 +10,7 @@ Use **Inventory > Move** to move inventory from where it is to a new location.
    - **A location:** pick it to see every SKU there, and choose the same way.
 3. Click **Move**.
 
-![[move-inventory.png]]
+![[move-inventory.png|300]]
 
 ## Good to know
 

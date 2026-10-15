@@ -4,7 +4,7 @@ ShipperXL Mobile records inventory by scanning: receiving, moving, processing an
 shipping. The main menu shows only the screens your roles allow. See
 [Install ShipperXL Mobile](install-mobile.md) to get started.
 
-![[mobile-menu.png]]
+![[mobile-menu.png|300]]
 
 ## ADD, then DONE
 

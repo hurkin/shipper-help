@@ -30,6 +30,6 @@ ORDER BY p.Posted DESC
 You can then use `@PaymentReference`, `@PaymentMethod`, `@PaymentAmount` and
 `@PaymentPosted` in the subject and body. These names are case-sensitive.
 
-![[payment-posted-job.png]]
+![[payment-posted-job.png|500]]
 
 See also: [Scheduled Jobs](../context/G014.md).

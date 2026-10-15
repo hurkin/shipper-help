@@ -5,6 +5,6 @@ barcode labels.
 
 Set the printer's preferences, and its default preferences, as shown below.
 
-![[label-printer-settings.png]]
+![[label-printer-settings.png|300]]
 
 On a kiosk, the label printer must be named **labels**.
