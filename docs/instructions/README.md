@@ -1,7 +1,8 @@
 # Instructions
 
 Start with [How Shipper Works](how-shipper-works.md) to see how the records connect,
-then [Getting Started](getting-started.md).
+then [Getting Started](getting-started.md). [See Who Changed a Record](record-history.md)
+explains a record's History.
 
 ## Day to day
 

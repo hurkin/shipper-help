@@ -3,6 +3,7 @@
   - [Overview](./)
   - [How Shipper Works](how-shipper-works.md)
   - [Getting Started](getting-started.md)
+  - [See Who Changed a Record](record-history.md)
 - **Day to Day**
   - [Create a Sales Order](sales-orders.md)
   - [Create a Quick Sale](quick-sale.md)

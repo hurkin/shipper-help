@@ -177,6 +177,7 @@ window.SEARCH_PATHS = [
   '/context/W002',
   '/instructions/how-shipper-works',
   '/instructions/getting-started',
+  '/instructions/record-history',
   '/instructions/sales-orders',
   '/instructions/quick-sale',
   '/instructions/bookings',
@@ -215,4 +216,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.2',
   '/release-notes/2026.1'
 ];
-window.SEARCH_VERSION = '360fe3e12b9d';
+window.SEARCH_VERSION = 'b3519bc7b9ad';

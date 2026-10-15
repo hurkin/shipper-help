@@ -102,8 +102,9 @@ fulfilled in units, such as bales.
   payment, or adding a record to a queue can send an email, run a report or update
   another system.
 - **What you see depends on your role and your subscription.** A missing menu entry
-  means your role doesn't include it, or your edition doesn't. Read lets you look,
-  Write lets you edit, and Delete lets you delete and do a few heavier actions.
+  means your role doesn't include it, or your edition doesn't. Owners have every
+  right, but only to what the edition includes. Read lets you look, Write lets you
+  edit, and Delete lets you delete and do a few heavier actions.
 
 ## Barcodes
 

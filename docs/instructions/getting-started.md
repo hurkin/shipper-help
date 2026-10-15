@@ -56,3 +56,6 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - A record page shows **Unsaved changes** while you have edits. Leaving the page,
   refreshing or signing out asks first.
 - The **?** button on each screen opens help for that screen.
+- **History**, at the far right of a record's **Save** row, shows who changed the
+  record and its lines, and what they changed. See
+  [See Who Changed a Record](record-history.md).
