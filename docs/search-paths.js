@@ -215,4 +215,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.2',
   '/release-notes/2026.1'
 ];
-window.SEARCH_VERSION = '8132ffde4195';
+window.SEARCH_VERSION = '360fe3e12b9d';

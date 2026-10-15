@@ -19,7 +19,7 @@ created or last edited it.
 
 ## After a customer visit
 
-- **Directions to SKUs** opens a route to every SKU on the inspection.
+- **Directions** opens a route to every SKU on the inspection.
 - To quote what the customer saw, tick SKUs on **Related Items** and click
   **Create Quote**. A sales quote to the customer opens with a line for each SKU,
   ready for quantities and prices.
