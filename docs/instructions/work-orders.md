@@ -14,8 +14,25 @@ container. It ties the work to a cargo or a booking, and its cost becomes a bill
    **Work Center**, and the planned start.
 4. Save. The work order number comes from the number scheme if you leave it blank.
 
+Work that every load of an agreement needs, such as hauling or pressing, can be
+created for you instead. See **Have work orders created for you**, below.
+
 As the work happens, record **Actual Start** and **Actual Finish**. Finishing a
 work order makes it billable in [Create Bills](../context/W005.md).
+
+## Have work orders created for you
+
+1. Open the purchase or sales agreement and go to its **Auto Work Orders** tab.
+2. Click **Add Auto Work Order**. Choose the work item, and the worker, zone,
+   center and anything else that is always the same. Enter a cost only to lock it.
+   Leave it blank to use the cost list.
+3. Tick **Include on bills and invoices** if the work is billed to the customer.
+4. Save. Every line of the agreement now takes it. To leave it off one line, open
+   the line, go to its **Auto Work Orders** tab and clear its box. A line can also
+   have its own under **This line only**.
+
+When a line is assigned to a cargo, or fulfilled on one, the work order appears on
+the cargo's **Work Orders** tab. See [Work Orders](../context/W001.md).
 
 ## Plan the week with the scheduler
 

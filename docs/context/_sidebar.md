@@ -140,6 +140,7 @@
   - [Scheduled Job Log](R192.md)
   - [Scheduled Jobs](G014.md)
   - [Send Pictures](M09.md)
+  - [Settings](settings.md)
   - [Ship Inventory](M05.md)
   - [Shipment Advice](R121.md)
   - [Shipment Inventory Cost](R126.md)

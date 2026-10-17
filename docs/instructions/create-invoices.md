@@ -30,8 +30,9 @@ Shipper builds the invoice from what has been fulfilled and saves it straight aw
   With **Contents Descriptions**, a cargo line uses the cargo's contents description
   instead.
 - Price, unit and references come from the order line.
-- Finished work orders on the booking can add lines too, when the order line has a
-  work order template marked to include on the bill.
+- Finished work orders on the booking can add lines too, when they were made from
+  an Auto Work Order marked **Include on bills and invoices**. See
+  [Work Orders](../context/W001.md).
 
 ## Good to know
 

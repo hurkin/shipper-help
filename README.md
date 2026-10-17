@@ -13,6 +13,8 @@ Site: https://hurkin.github.io/shipper-help/
   screen's help button passes it). Its sidebar is generated, alphabetical by title. `docs/context/A004.md` opens at
   `https://hurkin.github.io/shipper-help/#/context/A004`. The mnemonic appears only
   in the file name and URL, never in the page text.
+  A screen with no feature has a page named in shipper-ui's nav config instead:
+  Admin > Settings opens `docs/context/settings.md`.
 - `docs/assets/`: shared images. Embed one with Obsidian's `![[mobile-menu.png]]`
   (optionally `![[mobile-menu.png|alt text]]` or `![[mobile-menu.png|400]]` for width);
   a plugin in `docs/index.html` turns it into an image from `docs/assets/`.

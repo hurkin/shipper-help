@@ -143,6 +143,7 @@ window.SEARCH_PATHS = [
   '/context/R192',
   '/context/G014',
   '/context/M09',
+  '/context/settings',
   '/context/M05',
   '/context/R121',
   '/context/R126',
@@ -216,4 +217,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.2',
   '/release-notes/2026.1'
 ];
-window.SEARCH_VERSION = 'b3519bc7b9ad';
+window.SEARCH_VERSION = '52d61717c509';
