@@ -1,6 +1,6 @@
 # Release Notes
 
-![](https://hurkinapps.blob.core.windows.net/apps/images/2026-4.jpg|600)
+<img src="https://hurkinapps.blob.core.windows.net/apps/images/2026-4.jpg" alt="2026.4 release" width="600">
 
 Releases are planned quarterly. Each is deployed in an evening window, and the apps
 ask you to update the next time you start them.
