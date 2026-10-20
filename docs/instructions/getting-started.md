@@ -53,6 +53,10 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - Lookups start searching after you type a few characters. If nothing matches and
   you can add records of that kind, the lookup offers to create one.
 - Grids remember their filters and search text until you close the browser tab.
+- **Recent**, at the foot of the menu, lists the last 15 records you opened, newest
+  first. It follows you to other devices.
+- The browser tab names the record or screen that is open, such as *Booking
+  279447253*, so the browser's history lists the records you worked on.
 - A record page shows **Unsaved changes** while you have edits. Leaving the page,
   refreshing or signing out asks first.
 - The **?** button on each screen opens help for that screen.
@@ -64,6 +68,13 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - **History**, at the far right of a record's **Save** row, shows who changed the
   record and its lines, and what they changed. See
   [See Who Changed a Record](record-history.md).
+
+## Notes
+
+Bookings, agreements, bills and companies have a **Notes** tab. Notes show on one
+line in the grid. Click one to open the whole note, with who wrote it and when.
+If you can edit the record, you can edit the note there too, including whether a
+bill's note is **Public**.
 
 ## Companies and contacts
 

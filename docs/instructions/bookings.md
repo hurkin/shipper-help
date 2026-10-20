@@ -9,7 +9,8 @@ mean the same record. The booking number from the shipline is its identifier.
 3. Click **Create**, then fill in the **General** tab:
    - The four legs: **IPI** (place of receipt), **POL** (port of loading),
      **POD** (port of discharge) and **DLV** (place of delivery), each with its
-     planned and actual dates.
+     planned and actual dates. The arrows over the legs show the days from one
+     leg to the next, in red if the dates are out of order.
    - Vessel, voyage, container class and type, and quantity.
 4. On **Freight**, enter the shipper and forwarder, the cut-off dates (cargo due,
    documents due, earliest pickup and so on) and the bill of lading number.
@@ -19,6 +20,14 @@ mean the same record. The booking number from the shipline is its identifier.
 6. Click **Save**.
 
 ![[booking-general.png]]
+
+## Starting from another booking
+
+For a booking much like an existing one, open that booking and click **Clone**.
+Enter the new booking number (or leave it blank for the next number) and click
+**Clone**. The new booking has the same parties, ports, dates and sea details, but
+no bill of lading, vessel, voyage, references, lines or cargo. Enter those, then
+save.
 
 ## Adding containers
 

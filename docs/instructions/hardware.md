@@ -1,9 +1,9 @@
 # Hardware and Supplies
 
-This is the hardware we recommend with ShipperXL, and how it fits together at a
-typical site:
-
-![[hardware-overview.png]]
+ShipperXL runs on the computers and phones you already have. Everything on this
+page is optional: extra components that make gathering and capturing information
+faster and more reliable, such as scanning tags instead of typing them, printing
+labels, and recording weights and pictures at the scale without anyone at a desk.
 
 ## Desktop barcode printer
 

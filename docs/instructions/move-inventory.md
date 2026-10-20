@@ -8,7 +8,9 @@ Use **Inventory > Move** to move inventory from where it is to a new location.
    - **A SKU:** pick it to see its balance in every location, then choose how much
      raw and processed to take from each.
    - **A location:** pick it to see every SKU there, and choose the same way.
-3. Click **Move**.
+3. If the move happened earlier, enter it in **Transaction Date**. Leave it blank
+   for now.
+4. Click **Move**.
 
 ![[move-inventory.png|300]]
 
@@ -18,9 +20,9 @@ Use **Inventory > Move** to move inventory from where it is to a new location.
   and the failing lines show why (for example, not enough on hand, or the same from
   and to location).
 - A move writes two rows: one out of the old location and one into the new
-  location a second later. Both are dated now.
+  location a second later. Both are dated with the Transaction Date, or now.
 - Tags are faster and safer than SKUs. A barcode scanner works in the tag field.
-- Moves are dated with the current time. If you are catching up on paperwork, check
-  that nothing was shipped from the old location after the time you move it.
+- If you are catching up on paperwork, enter the Transaction Date, and check that
+  nothing was shipped from the old location after it.
 
 See also: [Move Inventory](../context/I010.md), [Move Inventory to Another SKU](move-to-another-sku.md).
