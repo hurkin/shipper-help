@@ -10,7 +10,8 @@ copies weights from a paper ticket:
 - With one or two cameras on the scale, a picture is taken with each weight and
   attached to the scale ticket.
 
-See [Install the Kiosk](install-kiosk.md) for hardware and setup.
+See [Hardware and Supplies](hardware.md) for what to buy and
+[Install the Kiosk](install-kiosk.md) for setup.
 
 ![[kiosk-home.png]]
 
@@ -19,6 +20,13 @@ See [Install the Kiosk](install-kiosk.md) for hardware and setup.
 The weight and picture recorded when you press **RECORD** are what is on screen at
 that moment. The weight turns green when it is stable. Wind or movement on the
 scale makes it change, so press **RECORD** only while the weight is green.
+
+![[kiosk-stable-weight.png|250]]
+
+Before recording, the kiosk shows the cargo and work order it found. Check them and
+press **RECORD**, or **Cancel**.
+
+![[kiosk-confirm.png|300]]
 
 ## Inbound load with a prepared work order
 
@@ -53,6 +61,10 @@ A scale too short for a whole truck can take several weights per pass. Turn on
 first weight, **RECORD** for the second, and **DONE**.
 
 ## Image checking
+
+Each weight on the scale ticket keeps its time and pictures:
+
+![[kiosk-ticket-pictures.png|400]]
 
 Shipper checks pictures uploaded to scale tickets. When a picture doesn't match the
 ticket, the scale ticket shows it. To be told when this happens, set up a scheduled

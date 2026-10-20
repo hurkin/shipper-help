@@ -15,6 +15,8 @@ Site: https://hurkin.github.io/shipper-help/
   in the file name and URL, never in the page text.
   A screen with no feature has a page named in shipper-ui's nav config instead:
   Admin > Settings opens `docs/context/settings.md`.
+- `internal/`: developer and operations notes moved from support.hurkin.com/shipper/dev.
+  Not published on the site, but readable on GitHub because the repo is public.
 - `docs/assets/`: shared images. Embed one with Obsidian's `![[mobile-menu.png]]`
   (optionally `![[mobile-menu.png|alt text]]` or `![[mobile-menu.png|400]]` for width);
   a plugin in `docs/index.html` turns it into an image from `docs/assets/`.

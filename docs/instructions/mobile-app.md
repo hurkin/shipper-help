@@ -23,6 +23,11 @@ Fix or remove the line and try again.
 - **A SKU tag** stands for the SKU as a whole, not a particular load. When you use
   one, you also enter the location and quantity.
 
+An inventory tag (left) shows its serial number, cargo and SKU. A SKU tag (right)
+shows the item and SKU.
+
+![[mobile-block-tag.png|200]] ![[mobile-sku-tag.png|200]]
+
 ## Work orders
 
 Every printed work order has a barcode you can scan. There are three kinds:
@@ -33,6 +38,8 @@ Every printed work order has a barcode you can scan. There are three kinds:
   staging or backstocking.
 - **Shipment:** tied to an outbound cargo, such as delivering a container to the
   port.
+
+![[mobile-work-order-barcode.png|200]]
 
 ## The screens
 
@@ -47,6 +54,64 @@ Every printed work order has a barcode you can scan. There are three kinds:
 | [Inbound Inspection](../context/M08.md) | Record a quality check on an inbound load. |
 | [Send Pictures](../context/M09.md) | Attach photos to a cargo or SKU. |
 | [My Work Orders](../context/M11.md) | See work orders to do. |
+
+### Receive
+
+With inventory tags, scan each tag, the location you put it in, and the quantity
+received. With SKU tags, also scan the work order the product came in on.
+
+![[mobile-receive.png|200]] ![[mobile-receive-sku.png|200]]
+
+### Move
+
+With inventory tags, scan the tags and the new location. With SKU tags, also enter
+the **From** location and the raw or processed quantity. Watch for errors: you
+can't move more than is there.
+
+![[mobile-move.png|200]] ![[mobile-move-sku.png|200]]
+
+### Process
+
+Scan product out of raw inventory and into processed inventory, to ship later.
+A SKU tag also needs the **From** location and the raw quantity.
+
+![[mobile-process.png|200]] ![[mobile-process-sku.png|200]]
+
+### Return
+
+Put product back after processing. For example, a tag had 56 bales, 50 were used,
+and 6 go back. The return is tied to the tag's last work order. A SKU tag also
+needs the **From** location.
+
+![[mobile-return.png|200]] ![[mobile-return-sku.png|200]]
+
+### Ship
+
+Scan product out of inventory as it is loaded, converting it to processed product
+at the same time if it wasn't processed earlier. Staged product usually has no
+identifiable tags, so ship it by SKU from its location. To convert raw to processed
+as you ship, enter both quantities.
+
+![[mobile-ship.png|200]] ![[mobile-ship-sku.png|200]]
+
+### Inventory and Inbound Inspection
+
+**Inventory** looks up what is on hand: scan a SKU tag, inventory tag, location or
+work order barcode, or type a SKU, location or work order number. **Inbound
+Inspection** records a check on an inbound load: scan any of its tags, or its work
+order.
+
+![[mobile-inventory.png|200]] ![[mobile-inspection.png|200]]
+
+### Send Pictures
+
+Scan a SKU, inventory tag or work order, take pictures, and press **SAVE**. The
+pictures are attached to the cargo or SKU. Current versions of the app upload up to
+3 pictures at a time directly. Older versions send them by email, which needs
+[email attachments](email-attachments.md) set up and an email app on the device:
+when asked which app to share with, choose your email app and **ALWAYS**.
+
+![[mobile-send-pictures.png|200]] ![[mobile-share-gmail.png|200]]
 
 ## Process and Ship: enter it before ADD
 
@@ -66,8 +131,17 @@ the whole load. For 896 units, enter 896 once, not eight lines of 112.
 
 ## Settings
 
-With a device that has a built-in scanner, such as a Zebra TC25, turn off the
-camera **Scan** buttons in **Settings**. They are on by default.
+- **Show camera-based scan buttons:** with a device that has a built-in scanner,
+  such as a Zebra TC27, turn these off. They are on by default.
+- **Inspection after receive:** opens Inbound Inspection after each receipt.
+- **Send Pictures after ship:** opens Send Pictures after each shipment.
+
+![[mobile-settings.png|200]]
+
+If you chose the wrong app to share pictures with, reset the choice. On Android, go
+to **Settings > Apps**, open the menu and choose **Reset app preferences**.
+
+![[mobile-reset-preferences.png|200]]
 
 ## Related
 

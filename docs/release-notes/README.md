@@ -12,3 +12,5 @@ ask you to update the next time you start them.
 | [Database Migrations](2026-05-database-migrations.md) | May 25, 2026 |
 | [2026.2](2026.2.md) | March 25, 2026 |
 | [2026.1](2026.1.md) | December 31, 2025 |
+
+Earlier releases, from 2018 to 2025.5, are in the [archive](archive.md).

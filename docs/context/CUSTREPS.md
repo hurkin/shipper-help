@@ -9,7 +9,14 @@ with this feature see the custom reports published for your database.
   from scratch. Access to the report server is arranged through support.
 - Custom reports can include custom fields, which standard reports don't show.
 - Each custom report has its own rules for what it includes. Ask whoever built it.
+- A custom report is shown only to roles with its own feature, set in the report's
+  description. One that uses a standard report's feature replaces that report
+  everywhere it appears, so it isn't listed here.
+- A custom report with a parameter matching a screen's key, such as a booking's,
+  is also offered on that screen.
 
 ## Related
 
-[Create Custom Reports](../instructions/custom-reports.md) · [Custom Fields](G009.md)
+[Create Custom Reports](../instructions/custom-reports.md) ·
+[Using Report Builder](../instructions/report-builder.md) ·
+[Using Power BI](../instructions/power-bi.md) · [Custom Fields](G009.md)

@@ -22,3 +22,21 @@ and the total on a document must agree.
 
 Each container is 18.1895 MT, which rounds up to 18.190, so the rows add up to
 54.570. The total pounds, 120,303, converts to 54.569 MT.
+
+## A detailed example
+
+Five containers, converted to metric tons at 2,204.6341 pounds per MT, rounded to 4
+and to 3 places:
+
+| Pounds | MT, 4 places | MT, 3 places |
+|---|---|---|
+| 50,000 | 22.6795 | 22.680 |
+| 50,100 | 22.7249 | 22.725 |
+| 50,240 | 22.7884 | 22.788 |
+| 50,300 | 22.8156 | 22.816 |
+| 50,400 | 22.8609 | 22.861 |
+| **Column total:** 251,040 | **113.8693** | **113.870** |
+| **Calculated from 251,040 lbs** | 113.8692 | 113.869 |
+| **Difference** | 0.0001 | 0.001 |
+
+The column total is what the report shows.

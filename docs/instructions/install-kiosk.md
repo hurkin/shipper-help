@@ -1,6 +1,7 @@
 # Install the ShipperXL Kiosk
 
-These instructions are for IT staff.
+These instructions are for IT staff. See [Hardware and Supplies](hardware.md) for
+what to buy.
 
 ## Hardware
 
@@ -10,8 +11,10 @@ These instructions are for IT staff.
    power.
 4. Power up the tablet and connect it to your network.
 5. Connect the label printer and name it **labels**.
-6. Connect the standard printer and make it the default.
-7. Configure the barcode reader.
+6. Connect the standard printer and
+   [make it the default](https://support.microsoft.com/en-us/windows/set-a-default-printer-in-windows-e10cf8b8-e596-b102-bf84-c41022b5036f).
+7. Configure the barcode reader with its configuration sheet (see
+   [Hardware and Supplies](hardware.md?id=desktop-barcode-scanner)).
 
 ## Set up the scale in Shipper
 
@@ -25,8 +28,9 @@ Each scale supports one kiosk.
 
 1. Download the
    [kiosk installer](https://hurkinapps.blob.core.windows.net/apps/downloads/Hurkin.Scale.Client.Setup.msi).
-2. If .NET 10 isn't installed, you are asked to install it. Install both the
-   **ASP.NET Core Runtime 10.0** and the **.NET Desktop Runtime 10.0**.
+2. If [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) isn't
+   installed, you are asked to install it. Install both the **ASP.NET Core Runtime
+   10.0** and the **.NET Desktop Runtime 10.0** (Windows x64).
 3. Enter your database code, license key and scale id.
 4. Restart the computer if asked.
 

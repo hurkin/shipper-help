@@ -6,6 +6,9 @@ and shipping by scanning.
 - **Android:** [Google Play](https://play.google.com/store/apps/details?id=com.hurkin.shipperxl.mobile.android)
 - **iPhone and iPad:** [App Store](https://apps.apple.com/us/app/shipperxl/id1423221684)
 
+A phone camera works, but a device with a built-in scanner is faster and more
+reliable. See [Hardware and Supplies](hardware.md).
+
 ## Signing in
 
 1. Tap **SIGN IN**.
@@ -15,7 +18,7 @@ and shipping by scanning.
 
 ## Good to know
 
-- You need a ShipperXL account, and permission to use the app's features. Your
+- You need a ShipperXL account. See [User Accounts](user-accounts.md). You also need permission to use the app's features. Your
   administrator can add you to the *Mobile Scanner* role, or add the features you
   need to one of your roles.
 - If you were already signed in, permission changes can take from 20 minutes to 2
@@ -23,3 +26,7 @@ and shipping by scanning.
 - Once signed in, the app stays signed in for 8 to 12 hours.
 
 See [Using ShipperXL Mobile](mobile-app.md) for how the screens work.
+
+To try the next version on an iPhone, if there is one, join the
+[TestFlight beta](https://testflight.apple.com/join/zH379kQF). Android test versions
+are offered as a beta in the Play Store.

@@ -204,6 +204,18 @@ window.SEARCH_PATHS = [
   '/instructions/payment-posted-job',
   '/instructions/rounding',
   '/instructions/custom-reports',
+  '/instructions/power-bi',
+  '/instructions/report-builder',
+  '/instructions/api',
+  '/instructions/implementation-checklist',
+  '/instructions/new-database',
+  '/instructions/hardware',
+  '/instructions/user-accounts',
+  '/instructions/email-attachments',
+  '/instructions/accounting-integration',
+  '/instructions/quickbooks-service',
+  '/instructions/mailchimp',
+  '/instructions/example-documents',
   '/instructions/install-desktop',
   '/instructions/install-mobile',
   '/instructions/mobile-app',
@@ -211,10 +223,12 @@ window.SEARCH_PATHS = [
   '/instructions/kiosk',
   '/instructions/label-printer',
   '/instructions/test-versions',
+  '/instructions/billing',
   '/release-notes/2026.4',
   '/release-notes/2026.3',
   '/release-notes/2026-05-database-migrations',
   '/release-notes/2026.2',
-  '/release-notes/2026.1'
+  '/release-notes/2026.1',
+  '/release-notes/archive'
 ];
-window.SEARCH_VERSION = '52d61717c509';
+window.SEARCH_VERSION = 'bbe6c66bf5d3';

@@ -56,6 +56,40 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - A record page shows **Unsaved changes** while you have edits. Leaving the page,
   refreshing or signing out asks first.
 - The **?** button on each screen opens help for that screen.
+- **Pictures are public.** JPG and PNG attachments are stored where anyone with
+  their link can see them, so documents and reports can show them. Other files are
+  private.
+- In ShipperXL Desktop, lists that rarely change (such as categories, commodities
+  and container types) are cached. After changing one, press **F9** to reload it.
 - **History**, at the far right of a record's **Save** row, shows who changed the
   record and its lines, and what they changed. See
   [See Who Changed a Record](record-history.md).
+
+## Companies and contacts
+
+[Companies and Contacts](../context/G008.md) holds everyone you deal with. A contact
+(a person) can belong to several companies, and a company can have many addresses
+and categories, such as customer, supplier and carrier.
+
+- Changes to a company or contact show on everything you do from then on. They
+  don't change documents already printed or sent.
+- If a business changes its name, rename it rather than adding a new one. All its
+  past records follow it.
+
+## Save typing
+
+- **Copy To** makes a new agreement from an existing one, with its parties, terms
+  and lines. For example, copy a purchase contract to a purchase order for one
+  delivery against it. See [Sales Orders](../context/A004.md).
+- **Clone** copies an item, cost list, asset or work order to start a new one.
+- **Auto Work Orders** on a purchase or sales agreement create the same work
+  orders, with the same rates and services, on every cargo its lines are assigned
+  to. See [Work Orders and the Scheduler](work-orders.md).
+- [Import Data](../context/G012.md), in ShipperXL Desktop, loads companies, items,
+  bookings or cargo from a CSV file, such as one exported from QuickBooks.
+
+## Next
+
+New to ShipperXL? Work through the
+[Implementation Checklist](implementation-checklist.md) and
+[Set Up a New Database](new-database.md).

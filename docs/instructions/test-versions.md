@@ -12,6 +12,8 @@ Good to know:
   works only on your TEST database.
 - To go back, reinstall the released version from
   [Install ShipperXL Desktop](install-desktop.md).
+- A test version of ShipperXL Mobile for iPhone is on
+  [TestFlight](https://testflight.apple.com/join/zH379kQF).
 - A [test version of the kiosk](https://hurkinapps.blob.core.windows.net/apps/dev/Hurkin.Scale.Client.Setup.msi)
   is also available. Use it only if asked to.
 - Report problems to support@shipperxl.com.

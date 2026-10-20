@@ -6,3 +6,4 @@
   - [Database Migrations](2026-05-database-migrations.md)
   - [2026.2](2026.2.md)
   - [2026.1](2026.1.md)
+  - [Archive (2018–2025)](archive.md)
