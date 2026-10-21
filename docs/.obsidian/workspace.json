@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "c7597d1bf3c53704",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ccde1b71d48107b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49b1ac60e0418843",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6c159603f4daf061",
+    "type": "split",
+    "children": [
+      {
+        "id": "08ce9a6491d55780",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a024f0aab6a70a3e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "61cb2beb0ef8f6f6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "line:(.png)",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8c9271b2c0568832",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0ad56433e708ae1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb564de98ac07148",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02a7253f0a7caea5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "instructions/install-mobile.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "317fa02446ecd575",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "instructions/install-mobile.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "e139e2ec943a70b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0539274b84ec695c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "612536b31975343a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "instructions/install-mobile.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "49b1ac60e0418843",
+  "lastOpenFiles": [
+    "instructions/automated-credit-memos.md",
+    "instructions/bookings.md",
+    "instructions/how-shipper-works.md",
+    "instructions/install-mobile.md",
+    "instructions/kiosk.md",
+    "instructions/label-printer.md",
+    "instructions/mobile-app.md",
+    "instructions/move-inventory.md",
+    "instructions/payment-posted-job.md",
+    "instructions/queues.md",
+    "release-notes/2026.4.md",
+    "README.md"
+  ]
+}

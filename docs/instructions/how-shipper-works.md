@@ -19,7 +19,7 @@ Set these up before anything else. Every other record points at them.
 | **Company / Contact** | Anyone you deal with: customers, suppliers, carriers, workers. |
 | **Price List / Cost List** | What you charge (price) and what you pay (cost) per unit of an item. Shipper fills amounts from these. |
 
-## The chain
+## The key events
 
 ### 1. Agreements say what you will buy and sell
 
