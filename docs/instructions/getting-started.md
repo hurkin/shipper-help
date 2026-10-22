@@ -74,7 +74,7 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 Bookings, agreements, bills and companies have a **Notes** tab. Notes show on one
 line in the grid. Click one to open the whole note, with who wrote it and when.
 If you can edit the record, you can edit the note there too, including whether a
-bill's note is **Public**.
+bill's note is **Public**. On an agreement, delete rights also let you delete it.
 
 ## Companies and contacts
 
