@@ -17,7 +17,7 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 
 | Sev | Change | Detail |
 |---|---|---|
-| Medium | **Notes: delete and visibility flags** | Clicking a note opens it for editing on agreement, bill, booking and party pages for anyone who may write the record, and agreement notes can be deleted at Delete level. Still open: bill, booking and party notes can't be deleted (WinForms had Remove). Visibility flags are lost: agreement notes are always saved with `ShowBuyer/ShowSeller/ShowShipTo = false`, booking notes with `IsPublic = false`, `IsProcessor = false`. Only bill notes keep `IsPublic`. |
+| Medium | **Notes: visibility flags** | Notes on agreement, bill, booking and party pages can be edited by anyone who may write the record and deleted with Delete on it. Still open: visibility flags are lost: agreement notes are always saved with `ShowBuyer/ShowSeller/ShowShipTo = false`, booking notes with `IsPublic = false`, `IsProcessor = false`. Only bill notes keep `IsPublic`. |
 
 ---
 
