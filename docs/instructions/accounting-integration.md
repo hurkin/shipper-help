@@ -25,20 +25,28 @@ Then set the account codes Shipper posts with in **Admin > Settings**, on the
 
 ## How accounting codes are chosen
 
-When an invoice is created from a booking, each line's accounting item number,
-class and accounts are worked out in this order. A later step wins over an earlier
-one:
+Each bill and invoice line with an item gets an accounting item number, class and
+account. Bills and credits get an expense account, invoices an income account.
+They are worked out when the line is created, by Create Bills, Create Invoices or
+Create Bill, and each time a bill or line is saved. A later step wins over an
+earlier one:
 
-1. **The item's** external item number, class, income account and expense account.
-2. **Class from fulfillment:** the first fulfillment of the line whose processor,
-   work center or work zone has an external class, taken in that order.
+1. **The item's** external item number, class and account, where the line has none
+   yet. Changing a line's item clears its codes first, so the new item's are used.
+2. **Class from fulfillment** (invoices made from a sales order only): the first
+   fulfillment of the line whose processor, work center or work zone has an
+   external class, taken in that order.
 3. **Class from the work zone:** the line's work zone, if it has an external class.
-   The work zone comes from the line's fulfillment, else the scale of the cargo that
-   fulfilled it, else its assignment, else the booking's cargo.
+   The work zone comes from the line's work orders, else the fulfillment, scale or
+   assignment of its cargo or agreement line, else the booking's cargo.
 4. **Item overrides:** an item's accounting overrides that match the line's work
    zone, or the seller's country or region, replace each code they set.
-5. **The default income account** in **Admin > Settings** fills an income account
-   that is still empty.
+5. **The default account** in **Admin > Settings**, **Default Expense Account** for
+   bills and **Default Income Account** for invoices, fills an account that is still
+   empty.
+
+A bill line's description also starts with its work zone, such as *Ellensburg:
+Squeeze Loading*.
 
 ## Related
 
