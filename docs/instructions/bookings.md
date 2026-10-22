@@ -11,9 +11,12 @@ mean the same record. The booking number from the shipline is its identifier.
      **POD** (port of discharge) and **DLV** (place of delivery), each with its
      planned and actual dates. The arrows over the legs show the days from one
      leg to the next, in red if the dates are out of order.
+   - The cut-offs, empty pickup and receiving, under their legs.
    - Vessel, voyage, container class and type, and quantity.
-4. On **Freight**, enter the shipper and forwarder, the cut-off dates (cargo due,
-   documents due, earliest pickup and so on) and the bill of lading number.
+   - Memos and references, at the bottom.
+4. On **Freight**, enter the shipper and forwarder, documents due, the freight
+   class, the bill of lading and the ITN, and pick the **Estimated Freight Rate**.
+   See [Bookings](../context/B008.md?id=freight-rate).
 5. On **Fulfillment**, use **Add line item** to put each sales line (and purchase
    line, for back-to-back trades) on the booking, and enter the assigned
    quantities.
