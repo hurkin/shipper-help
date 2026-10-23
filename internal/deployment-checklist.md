@@ -13,18 +13,21 @@ When deploying a release of Shipper and/or Console:
 
 - Update the ShipperXL system message in Console.
 
-**-01:00**
+**-01:00 or -00:30** prior to release, depending upon release size
 
-- Pause the Database, Webservice and Reports pipelines in DevOps.
-- Create a PR to merge to main.
-- Monitor the pipelines. All client and web installers should run.
-- Digitally sign the client executables.
+- Create PRs to merge to _main_ on each repo, in order, as follows:
+   - `haal-api`
+   - `haal-ui`
+   - `shipper-db`
+   - `shipper-api`
+   - `shipper-svc`
+   - `shipper-kiosk`
+   - `shipper-windows`
 
-**+00:00**
 
-- Update the ShipperXL home page image in Console.
-- Unpause the SXL Database, Webservice and Reports pipelines in DevOps.
-- Delete all user sessions from the HAALService database.
+**+00:00** stated release completion time
+
+- Update the ShipperXL home page and help urls in [Console](https://secure.hurkin.com).
 - Remove the alert message.
 - Update the ShipperXL version numbers in Console.
 - Check every interface: ShipperXL, Kiosk, Mobile App, Job Agent.

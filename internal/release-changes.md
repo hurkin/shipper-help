@@ -28,7 +28,6 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 | Sev | Change | Detail |
 |---|---|---|
 | Medium | **Child-orders grid on a contract is gone** (`gridRelated`) | WinForms listed the orders drawn from a contract. The web has no view of a contract's call-off orders. |
-| Low | Line-item grid | WinForms edited Ordered, Non-Inv SKU, Price, Reference, Cust/Sup Ref and Completed inline and showed Assigned, Fulfilled, Price Per, Processor/Internal/Buyer-Seller memos. The web grid is read-only (edits go through the dialog) and shows none of Assigned, Fulfilled, Price Per or the memos. |
 
 ### 2.2 Agreement line (`AgreementItem`)
 
@@ -129,13 +128,10 @@ Differences from WinForms that are intended. They're listed so they can be expla
 
 | Change | Detail |
 |---|---|
-| Default date window | The grids start at six months back on Ordered (or on Last Fulfilled in the Fulfilled view). WinForms applied no date filter by default. Older open agreements are hidden until the user changes the date. |
 | Search filters removed | WinForms `GetAgreements3` filtered by number, reference, order date ±range, completion date ±range, buyer, seller, ship-to, buyer contact, seller contact, Approved only, Incomplete only, **SKU**, **Shipment**, cancellation date or Canceled only, expiration date or Expired only. The web has one search box (number, Reference 1/2, buyer or seller name), Fulfilled/Not Fulfilled, an Ordered (or Fulfilled) date range and Include completed. Searching by SKU, shipment, ship-to, contact, canceled, expired or approved is no longer possible. |
-| Grid columns | Gone: Ship To, Effective, Expires, Completed, Canceled, Posted, Reference 1/2, contacts, Approved?. Added: Ordered/Assigned/Fulfilled quantities, Last Fulfilled, Total Amount. |
 | `AgreementNumber` | Editable and required in WinForms. Assigned from the number scheme on create, then read-only. |
 | `Currency_UnitTypeId` | Editable in WinForms. Set to the default currency on create. Not shown, not editable. |
 | Own-side party (Seller on a sale, Buyer on a purchase) and its address | Any party and address in WinForms. Fixed to the company (CO_DEFAULT/CO_ADDRESS). Only the agent contact can be changed. |
-| `PlannedDelivery`, `ActualDelivery`, `DocumentDelivery`, `Printed`, `PaymentDue` | Editable dates in WinForms. Not shown, not editable. Still copied by Copy Agreement. Some appear read-only in queue grids. |
 | `ParentAgreementId` on a **Sales Contract** | Editable in WinForms (txtParentAgreementId visible for SC). The parent picker exists only for PO and SO. |
 | Completed date permission | WinForms needed **Delete** level. Write level is enough. |
 | Parent-contract consistency warnings | WinForms warned when a line's parent contract or line didn't match the header's. No warning. |
@@ -158,7 +154,6 @@ Differences from WinForms that are intended. They're listed so they can be expla
 | LC lines and `CommodityId` | WinForms showed commodity on LC lines. The web gives an LC no lines at all, so existing LC lines and their commodity can't be reached. |
 | Search filters removed | WinForms `GetBills4` filtered by number, reference/advice no., buyer, seller, ship-to, bill/ship/printed/posted/completed/paid/due dates ±range, Not Posted, Not Printed, Not Completed, Not Paid, Agreement, Shipment and Pro Forma. The web has Open/Completed/Paid, a date range on the Completed and Paid views, and one search box (number, buyer, seller, references, LC reference/advice). |
 | Default date window | Completed and Paid start six months back. |
-| Grid columns | Gone: Ship To, Ship Date, Printed, Posted, Reference 1/2. Added: Balance, and Credit Amount and Expires for LCs. |
 
 ### 8.4 Bookings / Shipments
 
@@ -170,7 +165,6 @@ Differences from WinForms that are intended. They're listed so they can be expla
 | Cargo grid on the booking | Gone: Delivered to Carrier, Ready to Ship, Unloaded. |
 | Search filters removed | WinForms `GetBookings4` filtered by shipment number, booking number, origin port, destination port, shipper, carrier, forwarder, booking class, agreement, vessel, voyage, cargo/docs due, planned departure/arrival ±days, Not Departed, Not Arrived, booked/Not Booked, canceled/Not Canceled, completed/Not Completed, posted/Not Posted. The web has Loading/Departing/Arriving/Completed with a date range, Include canceled, and a search on number, carrier, vessel, voyage, release no. and B/L no. You can no longer search by shipper, forwarder, port, agreement or posted state. |
 | Default windows | Arriving defaults to the last 30 days. A delivered booking that isn't completed and arrived earlier drops out of every default view until the user widens the dates. |
-| Grid columns | Gone: Class, Forwarder, Shipper, ERD, Ramp Due, LRD, Receipt (IPI), Contract and Expires, Posted. |
 | **Shipments Bulk Edit** (`ucShipmentBulkEdit`) | Mass update of vessel, voyage, carrier, every cutoff and date, queue and an added note across selected bookings. Not in the web. |
 
 ### 8.5 Cargo
@@ -180,7 +174,6 @@ Differences from WinForms that are intended. They're listed so they can be expla
 | `CargoContainer.Chassis` | Editable in WinForms. Not shown, not editable. |
 | `CargoRailcar` row | WinForms created it when the container class is rail. Never created. |
 | Search filters removed | WinForms `GetCargos2` filtered by shipment number, **booking number**, cargo number, scale ticket, manifest, **chassis**, **seal**, **Cu plate**, container type, **location**, available/loaded/unloaded/shipped/completed dates ±range, and Not Available, Not Unloaded, Not Loaded, Not Shipped, Not Completed. The web has Received/Incomplete/Finished, Include completed, a date range, work zone, work center, and a search on cargo number, shipment number, manifest, ticket, SKU and work order. You can no longer search by booking, chassis, seal, Cu plate, location or container type. |
-| Grid columns | Gone: Booking, Scale Ticket, Location, Chassis, Manifest, Seal, Cu Plate, Ready to Ship, Delivered to Carrier, External Processor, Completed. Added: Work Order, SKU, Work Zone. |
 
 ### 8.6 SKUs
 
@@ -189,7 +182,6 @@ Differences from WinForms that are intended. They're listed so they can be expla
 | `Manufacturer_PartyId`, `Quantity2_UnitTypeId` (processed unit), `OrderLeadDays` | Editable in WinForms. Not shown, not editable. Left unchanged on save. |
 | `Barcode` | Editable in WinForms. Read-only; generated on save. |
 | **Recalculate inventory** (`RecalculateInventory`) | Button gone. |
-| Physical inventory grid on the SKU | Gone (Inventory > Physical Inventory remains). |
 
 ---
 

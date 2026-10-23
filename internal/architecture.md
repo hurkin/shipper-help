@@ -7,7 +7,6 @@ or SSRS. The mobile apps are built with .NET MAUI.
   servers. User sign-in and permissions (HAAL) are available globally.
 - HAAL services are replicated across regions for performance and recovery. Shipper
   services are regional, matching the customers' VMs.
-- Event Manager (the Job Agent) can run on premises for custom integrations.
 - Mobile app builds are done by hand, with gated releases through the
   [Google Play Console](https://play.google.com/console) and
   [App Store Connect](https://appstoreconnect.apple.com). All other builds are

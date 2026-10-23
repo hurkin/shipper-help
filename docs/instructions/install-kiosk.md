@@ -5,13 +5,13 @@ what to buy.
 
 ## Hardware
 
-1. If you use cameras, set them up first.
+1. If you use cameras, set them up first so they are available on your network.
 2. Assemble the stand and the barcode reader.
-3. Plug in the scale's serial cable (it may need an adapter), the barcode reader and
-   power.
+3. Plug in the scale's serial cable (it may need an adapter), the barcode reader, and
+   the power.
 4. Power up the tablet and connect it to your network.
-5. Connect the label printer and name it **labels**.
-6. Connect the standard printer and
+5. Connect the _label_ printer and name it **labels**.
+6. Connect the _standard_ printer and
    [make it the default](https://support.microsoft.com/en-us/windows/set-a-default-printer-in-windows-e10cf8b8-e596-b102-bf84-c41022b5036f).
 7. Configure the barcode reader with its configuration sheet (see
    [Hardware and Supplies](hardware.md?id=desktop-barcode-scanner)).

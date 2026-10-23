@@ -5,7 +5,7 @@
 Releases are planned quarterly. Each is deployed in an evening window, and the apps
 ask you to update the next time you start them.
 
-| Release | Deployed |
+| Release | Deployment Date |
 | ------- | -------- |
 | [2026.4](2026.4.md) | October 31, 2026 |
 | [2026.3](2026.3.md) | July 1, 2026 |

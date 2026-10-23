@@ -10,10 +10,10 @@ ShipperXL Desktop is the full-featured Windows app for day-to-day work.
 The app updates itself: after a release it asks to update the next time you start
 it or sign in.
 
-## The web app
+## The web application
 
 The web app works on the same database as the desktop app, so you can work in
-either. Sign in at [app.shipperxl.com](https://app.shipperxl.com).
+either. Sign in at [https://app.shipperxl.com](https://app.shipperxl.com).
 
 ## Troubleshooting
 

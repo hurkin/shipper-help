@@ -4,12 +4,12 @@ To try the next version before it is released:
 
 1. Download and install the
    [test version of ShipperXL Desktop](https://hurkinapps.blob.core.windows.net/apps/dev/Hurkin.Shipper.Client.Setup.msi).
-2. Sign in. The version number has a letter on the end, such as "a" or "b".
+1. The version number has a letter on the end, such as "a" or "b".
+1. Test versions may or may not work against your live database. Test servers are not always online.
+1. On the sign in screen, press F12 and change the HAAL server to https://haal.hurkin.com
 
 Good to know:
 
-- Some new features don't work on existing databases yet. Then the test version
-  works only on your TEST database.
 - To go back, reinstall the released version from
   [Install ShipperXL Desktop](install-desktop.md).
 - A test version of ShipperXL Mobile for iPhone is on

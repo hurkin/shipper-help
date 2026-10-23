@@ -30,11 +30,7 @@
 - **New work item:** don't assign it to anyone. Set the Area. Leave Iteration as
   "Hurkin" (the default).
 - **Prioritizing work:** drag and drop items in the
-  [Product Backlog](https://dev.azure.com/hurkin/Hurkin/_backlogs/backlog/Hurkin%20Team/Backlog%20items?showParents=false).
-- **Sprint planning:** review the
-  [Product Backlog](https://dev.azure.com/hurkin/Hurkin/_backlogs/backlog/Hurkin%20Team/Backlog%20items?showParents=false),
-  and assign work items to an iteration until it is full. Developers may add tasks
-  to each work item to define the work.
+  [Product Backlog](https://github.com/orgs/hurkin/projects/1).
 - **Completing work items:** check in the code and link it to the work item. Assign
   the PBI or bug to someone for testing.
 - **Verifying work items:** set the status to Done. If there is a problem, leave the
@@ -58,15 +54,14 @@ A report runs automatically every week so these can be paid.
 
 ![Time sheet work order](assets/timesheet-work-order.png)
 
-## Setting up a dev machine
+## Setting up a dev machine for windows development
 
-1. Install VS Code, with the C# and C# Dev Kit extensions.
+1. Install VS Code, with the Python, C# and C# Dev Kit extensions.
 2. Install Git.
-3. Install the .NET 9.0 SDK and the .NET Framework 4.8 developer pack.
-4. Install Visual Studio 2022 Pro.
-5. Clone the repos into `/local/Git/Hurkin`.
-6. In `/Shipper/Shipper`:
-
+3. Install the .NET 10.0 SDK and the .NET Framework 4.8 developer pack.
+4. Install Visual Studio 20222025 Pro.
+5. Clone the repos into `/local/git/hurkin`.
+6. For the windows repos:
    ```sh
    dotnet workload restore
    dotnet workload update
@@ -74,5 +69,5 @@ A report runs automatically every week so these can be paid.
    ```
 7. Install [Chocolatey](https://chocolatey.org/install), then
    `choco upgrade wixtoolset -y`.
-8. Open Visual Studio 2022 and install the WiX extension.
+8. Open Visual Studio and install the WiX extension.
 9. Build the release version of every solution.
