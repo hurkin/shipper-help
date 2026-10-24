@@ -28,7 +28,7 @@ Set these up before anything else. Every other record points at them.
 - Each line has an item, often a SKU, a quantity and a price.
 - An order can be *drawn from* a contract. Anything fulfilled on the order also
   counts towards the contract.
-- A quote becomes an order or contract with **Copy To**.
+- A quote becomes an order or contract with **Clone**.
 
 ### 2. Bookings reserve the transport
 

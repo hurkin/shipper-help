@@ -53,10 +53,20 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - Lookups start searching after you type a few characters. If nothing matches and
   you can add records of that kind, the lookup offers to create one.
 - Grids remember their filters and search text until you close the browser tab.
+- A list fills the window and shows as many rows a page as fit, so only the grid
+  scrolls. **Rows per page** at its foot changes that.
+- Lists of things that can be retired (items, SKUs, assets, companies, contacts,
+  admin lists) show **Active**, **Inactive** or **All**.
+- Every list can show **Created**, **Created By**, **Modified** and **Modified By**:
+  turn them on from a column header's menu (**Manage columns**).
+- A record's tabs end with **Documentation**, **Notes**, **Related** and
+  **Attachments**, where it has them.
 - **Recent**, at the foot of the menu, lists the last 15 records you opened, newest
   first. It follows you to other devices.
 - The browser tab names the record or screen that is open, such as *Booking
   279447253*, so the browser's history lists the records you worked on.
+- When a record can't be changed, its **Save** row says why, such as **Posted -
+  read only**.
 - A record page shows **Unsaved changes** while you have edits. Leaving the page,
   refreshing or signing out asks first.
 - The **?** button on each screen opens help for that screen.
@@ -73,8 +83,8 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 
 Bookings, agreements, bills and companies have a **Notes** tab. Notes show on one
 line in the grid. Click one to open the whole note, with who wrote it and when.
-If you can edit the record, you can edit the note there too, including whether a
-bill's note is **Public**. With delete rights on the record, you can delete it there.
+If you can edit the record, you can edit the note there too. With delete rights on
+the record, you can delete it there. Notes are always public.
 
 ## Companies and contacts
 
@@ -89,10 +99,11 @@ and categories, such as customer, supplier and carrier.
 
 ## Save typing
 
-- **Copy To** makes a new agreement from an existing one, with its parties, terms
+- **Clone** on an agreement makes a new one, of any type, with its parties, terms
   and lines. For example, copy a purchase contract to a purchase order for one
   delivery against it. See [Sales Orders](../context/A004.md).
-- **Clone** copies an item, cost list, asset or work order to start a new one.
+- **Clone** also copies an item, SKU, cost list, asset, inspection, booking or work
+  order to start a new one.
 - **Auto Work Orders** on a purchase or sales agreement create the same work
   orders, with the same rates and services, on every cargo its lines are assigned
   to. See [Work Orders and the Scheduler](work-orders.md).

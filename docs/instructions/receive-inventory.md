@@ -24,7 +24,7 @@ you why each match was outside your view.
 5. On **Fulfillment**, enter the number of units received (for example, bales) in
    **Fulfilled**.
 6. Back on **Inventory**, enter how many tags to print and, if you know it, the
-   receipt location. Click **Add tags**. The fulfilled quantity is split evenly
+   receipt location. Click **Add Tags**. The fulfilled quantity is split evenly
    across the tags. For example, 8 tags for 448 bales gives 56 bales each.
 7. On **Work Orders**, add or finish the work done on the load (trucking,
    unloading).

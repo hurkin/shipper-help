@@ -27,7 +27,7 @@
   counts towards the contract.
 - A new order doesn't appear in the Sales Orders grid until it has at least one
   line.
-- To turn a quote into an order, open the quote and use **Copy To**.
+- To turn a quote into an order, open the quote and use **Clone**.
 
 ## Reassign a line to another agreement
 

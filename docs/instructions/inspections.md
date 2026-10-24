@@ -10,7 +10,7 @@ An inspection records who looked at which SKUs or cargo, when, and what they fou
 3. In **Inspected By**, choose the customer or inspector.
 4. Check the **Inspection Date**. It starts at now.
 5. Fill in the type's fields.
-6. On **Related Items**, add the SKUs or cargo inspected, with a comment on each if
+6. On **Related**, add the SKUs or cargo inspected, with a comment on each if
    needed.
 7. Save. Then add photos or other files on **Attachments**.
 
@@ -20,7 +20,7 @@ created or last edited it.
 ## After a customer visit
 
 - **Directions** opens a route to every SKU on the inspection.
-- To quote what the customer saw, tick SKUs on **Related Items** and click
+- To quote what the customer saw, tick SKUs on **Related** and click
   **Create Quote**. A sales quote to the customer opens with a line for each SKU,
   ready for quantities and prices.
 

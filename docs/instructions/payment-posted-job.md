@@ -9,7 +9,7 @@ come back to Shipper already posted.
 
 ## Setting it up
 
-1. Go to **Admin > Scheduled Jobs** and click **Add**.
+1. Go to **Admin > Scheduled Jobs** and click **New Scheduled Job**.
 2. Set **When this event occurs** to *Invoice Payment Posted* (or the bill, credit
    memo or letter of credit version).
 3. Choose the action, for example *Send Email Notification*, and fill in its
