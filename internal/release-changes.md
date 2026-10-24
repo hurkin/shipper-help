@@ -23,13 +23,7 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 
 ## 2. Agreements (PO, PC, SO, SC, Quote)
 
-### 2.1 Agreement related data and actions
-
-| Sev | Change | Detail |
-|---|---|---|
-| Medium | **Child-orders grid on a contract is gone** (`gridRelated`) | WinForms listed the orders drawn from a contract. The web has no view of a contract's call-off orders. |
-
-### 2.2 Agreement line (`AgreementItem`)
+### 2.1 Agreement line (`AgreementItem`)
 
 | Sev | Field / action | Detail |
 |---|---|---|
@@ -155,13 +149,11 @@ Differences from WinForms that are intended. They're listed so they can be expla
 
 | Change | Detail |
 |---|---|
-| Ocean-only | The web creates and edits SEA bookings only. |
 | ShipsGo updates are applied on arrival, without the IPI/DLV legs | WinForms `ucShipment.CheckNotes` read the sync's JSON `BookingNote`, asked the user, then applied the changes. Now `api.BookingUpdated` (called from `POST /api/bookings/<n>/notes`) applies them right away: carrier, POL/POD ports and dates, carrier status, vessel, voyage, and each container's type, status and carrier dates. It logs the change list as a `ShipmentNote` and no longer writes `BookingNote`. The IPI and DLV port and date updates are commented out in the proc, because ShipsGo misreports load and discharge. |
 | `Shipment.Origin_PartyId` + address, `Shipment.Destination_PartyId` + address (place of receipt and delivery parties) | Editable in WinForms. Not shown, not editable. |
 | Cargo grid on the booking | Gone: Delivered to Carrier, Ready to Ship, Unloaded. |
 | Search filters removed | WinForms `GetBookings4` filtered by shipment number, booking number, origin port, destination port, shipper, carrier, forwarder, booking class, agreement, vessel, voyage, cargo/docs due, planned departure/arrival ±days, Not Departed, Not Arrived, booked/Not Booked, canceled/Not Canceled, completed/Not Completed, posted/Not Posted. The web has Loading/Departing/Arriving/Completed with a date range, Include canceled, and a search on number, carrier, vessel, voyage, release no. and B/L no. You can no longer search by shipper, forwarder, port, agreement or posted state. |
 | Default windows | Arriving defaults to the last 30 days. A delivered booking that isn't completed and arrived earlier drops out of every default view until the user widens the dates. |
-| **Shipments Bulk Edit** (`ucShipmentBulkEdit`) | Mass update of vessel, voyage, carrier, every cutoff and date, queue and an added note across selected bookings. Not in the web. |
 
 ### 8.5 Cargo
 

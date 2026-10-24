@@ -66,6 +66,11 @@ Each weight on the scale ticket keeps its time and pictures:
 
 ![[kiosk-ticket-pictures.png|400]]
 
+With two cameras, the kiosk screen always shows the pictures one above the other.
+The picture saved on the ticket follows the scale's **Stack images horizontally**
+setting in **Admin > Scales**, and is made from the same frames you saw when you
+pressed **RECORD**.
+
 Shipper checks pictures uploaded to scale tickets. When a picture doesn't match the
 ticket, the scale ticket shows it. To be told when this happens, set up a scheduled
 job. See [Scheduled Jobs](../context/G014.md).
