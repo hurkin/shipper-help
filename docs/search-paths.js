@@ -231,4 +231,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.1',
   '/release-notes/archive'
 ];
-window.SEARCH_VERSION = 'dcce2538ed70';
+window.SEARCH_VERSION = '984282ecfed9';

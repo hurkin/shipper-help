@@ -6,12 +6,15 @@ mean the same record. The booking number from the shipline is its identifier.
 1. Go to **Processing > Bookings** and search for the booking number first.
 2. Click **New**. Enter the booking number and choose the carrier.
    - Leave the number blank to take the next number from the booking number scheme.
+   - **Booking Class** starts at Ocean Vessel. Change it only for a booking that
+     isn't by sea: that booking has only IPI and DLV, with its cargo due under IPI.
 3. Click **Create**, then fill in the **General** tab:
    - The four legs: **IPI** (place of receipt), **POL** (port of loading),
      **POD** (port of discharge) and **DLV** (place of delivery), each with its
      planned and actual dates. The arrows over the legs show the days from one
      leg to the next, in red if the dates are out of order.
-   - The cut-offs, empty pickup and receiving, under their legs.
+   - The cut-offs, each just above its leg's departure, then empty pickup (IPI)
+     and receiving (POL).
    - Vessel, voyage, container class and type, and quantity.
    - Memos and references, at the bottom.
 4. On **Freight**, enter the shipper and forwarder, documents due, the freight
