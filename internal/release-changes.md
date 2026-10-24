@@ -59,7 +59,6 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 
 | Sev | Field | WinForms | Web |
 |---|---|---|---|
-| Medium | Origin/destination free-time memos under the contract rate | Shown | Not shown. The Estimated Freight Rate on the Freight tab otherwise covers the rate lookup |
 | Low | Fulfillment grid | Gone: External Processor (`Processor_PartyId`), agreement number and type, processor/internal/buyer-seller memos | |
 
 ### 4.2 Screens not ported
@@ -91,7 +90,6 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 
 | Sev | Field / action | WinForms | Web |
 |---|---|---|---|
-| Medium | **Inventory adjustment** from the SKU (I012, new `ItemInventory` row) and **edit an existing ledger row** (`ucItemInventory`: barcode, note, location, cargo, work order, date, quantities, sequence) | Present | Gone. The ledger is read-only, and inventory changes only through Receive/Return/Move/Ship/Process and Physical Inventory. Feature `I012` is defined but unused |
 | Low | SKU search | SKU, item, manufacturer, supplier, description, active | One search box plus Active/Inactive/All. Manufacturer and Description columns are gone. |
 
 ---
@@ -101,7 +99,6 @@ This compares the WinForms client (`shipper-windows/Client/Hurkin.Shipper.Client
 | Sev | Change | Detail |
 |---|---|---|
 | Medium | **Move: no memo** | WinForms Move Inventory set `Note` from a memo. The web Move writes no note. (Backdating is done: Move has a Transaction Date.) |
-| Medium | No single-transaction editor | See SKUs: `ucItemInventory` (edit or adjust one `ItemInventory` row) isn't ported. |
 | Low | Partial-barcode lookup | WinForms "Item Inventory by Partial Barcode" searched barcodes by fragment. The web ledger and balance look a tag up by exact barcode only. |
 
 ---
@@ -187,15 +184,18 @@ Differences from WinForms that are intended. They're listed so they can be expla
 
 ## 9. Open notes from development sessions
 
-These aren't differences from the WinForms client. They're the caveats, choices and suggestions raised at the end of Claude Code sessions (2026-10-09 to 2026-10-22, every repo under `hurkin/`), kept here because the session transcripts are the only other place they're written down. Items later fixed have been left out. Each says when it was raised; "decide" marks a choice that is yours to make.
+These aren't differences from the WinForms client. They're the caveats, choices and suggestions raised at the end of Claude Code sessions (2026-10-09 to 2026-10-24, every repo under `hurkin/`), kept here because the session transcripts are the only other place they're written down. Items later fixed have been left out. Each says when it was raised; "decide" marks a choice that is yours to make.
 
 ### 9.1 Choices made in the web app that you may want changed
 
 | Area | Note | Raised |
 |---|---|---|
+| SKU ledger lines | Add and edit need I004 at Delete; others open a line read only. The SKU, unit and total weights (the trigger recalculates them), the bill line and the moved-from line can't be changed. There's no Delete on a line. *Decide* whether the bill line and moved-from line should be editable, and whether to offer Delete. | 10-24 |
+| Agreement Related tab | Lists the agreements drawn from this one by their header or by any line naming it (many sales orders name their contract on lines only), one level down: a contract copied into another contract shows, but that contract's orders don't. The line dialog's Fulfilment tab is the same, one level down. | 10-24 |
+| Booking class | A booking in a class other than ocean shows no sea details, and saving it deletes its `BookingSea` row (shipper-api, in the save's transaction). Existing non-ocean bookings that still have one (175 Land on CALTEST, booking S0032481 as Air) show a warning and lose it on their next save from the web. The rate lookup runs only for ocean bookings; another class keeps its saved rate and free time. Watch Shipline stays offered, but the ShipsGo procs (`api.BookingUpdated`, `api.UpsertSchedule`) inner-join `BookingSea`, so they skip non-ocean bookings. | 10-24 |
+| Booking free time | Shown on General beside Receiving only while a freight rate is chosen: the rate's origin and destination memo, else its contract's, "None on the rate or its contract" when neither has one. | 10-24 |
 | Booking freight rate | The rate lookup matches on the shipment's IPI and DLV locations and the POL departure, as WinForms `ucShipment` did, not on the POL and POD ports. | 10-22 |
 | Booking freight rate | Without a freight class the lookup still runs, but finds only rates not limited to particular classes. WinForms refused to look up without one. | 10-22 |
-| Booking freight rate | The origin and destination free-time memos WinForms showed under the rate aren't shown. | 10-22 |
 | Agreement delete | Refused in more cases than "a line has fulfillments": also posted, cargo contents loaded against a line, orders drawn from it, linked bills or invoices, generated documents (as booking and bill deletes do). | 10-22 |
 | Bill line lookups | The Agreement Line lookup offers purchase orders and contracts on a vendor bill and sales orders and contracts on an invoice or credit memo; sales quotes aren't offered. The Cargo lookup searches cargo, booking, manifest, ticket, SKU and work order numbers, completed cargo included, and shows the first 250 matches. | 10-22 |
 | Bill line amounts | A found cost or price replaces the amount whenever the item or Per changes, even a typed amount; opening a saved line never re-prices it. | 10-22 |
