@@ -1,7 +1,8 @@
 # Custom Forms
 
 Custom forms are screens built for your company and added to ShipperXL Desktop as
-plug-ins, such as a fumigation tool that updates many containers at once.
+plug-ins, such as a fumigation tool that updates many containers at once. In the
+web app, [Bulk Edit](B003.md?id=bulk-edit) on the cargo lists does that job.
 
 ## Things to know
 

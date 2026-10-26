@@ -50,6 +50,12 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
 - The menu is grouped by stage: **Inbound**, **Processing**, **Outbound**,
   **Inventory**, **Documentation** and **Lists**, with **Reports** and **Admin** at
   the bottom.
+- **Search everything**, in the header, finds any record you can open by its
+  number, name or reference: bookings, cargo, scale tickets, agreements, bills,
+  parties, items, SKUs and carrier contracts. It starts after 3 characters and lists
+  each match's type and description. Choose one to open it. It is the web app's
+  version of ShipperXL Desktop's F3 search.
+- A list's search box sits at the right of its filters.
 - Lookups start searching after you type a few characters. If nothing matches and
   you can add records of that kind, the lookup offers to create one.
 - Grids remember their filters and search text until you close the browser tab.
