@@ -44,7 +44,10 @@ the cargo's **Work Orders** tab. See [Work Orders](../context/W001.md).
 4. To make identical work orders, such as one per container, select one and use
    **Clone**. Then use **Spread** to put the copies a few per day.
 5. Click **Save**. Nothing changes until you save.
-6. Share the plan with the **Work Order Schedule** report.
+6. To change the worker, work center, cost or other details on several work
+   orders at once, select them and click **Edit N Selected**. See
+   [Bulk Edit](../context/W004.md?id=bulk-edit).
+7. Share the plan with the **Work Order Schedule** report.
 
 ## Good to know
 

@@ -26,6 +26,20 @@ roles you give them.
 - Relate a vendor's, customer's or other party's people to *their own* company.
   They then see only the records that involve that company.
 
+Give each person **one active contact** with their sign-in email. If their email is
+on more than one, the dashboard warns them and links each contact so the extras can
+be deactivated, keeping the one that belongs to the right company.
+
+## What the dashboard shows
+
+A user from another company sees which companies' records they can reach on the
+dashboard, under the title: *Instance: TEST. You have access to Acme.* Your own
+staff see only the instance.
+
+If a user's email isn't on an active contact of any company, the dashboard says
+they see only the records they created. Add their email to a contact of their
+company (see *Add a user*).
+
 ## Troubleshooting
 
 *"You do not have permission to Shipment XXXXXX because your user account is not
