@@ -25,7 +25,9 @@ work order makes it billable in [Create Bills](../context/W005.md).
 1. Open the purchase or sales agreement and go to its **Auto Work Orders** tab.
 2. Click **Add Auto Work Order**. Choose the work item, and the worker, zone,
    center and anything else that is always the same. Enter a cost only to lock it.
-   Leave it blank to use the cost list.
+   Leave it blank to use the cost list. Its movement type decides which cargo it
+   is created on: Inbound on inbound cargo, Outbound on outbound, Process on
+   process-only cargo.
 3. Tick **Include on bills and invoices** if the work is billed to the customer.
 4. Save. Every line of the agreement now takes it. To leave it off one line, open
    the line, go to its **Auto Work Orders** tab and clear its box. A line can also
