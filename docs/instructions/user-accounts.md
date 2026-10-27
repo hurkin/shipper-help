@@ -25,6 +25,19 @@ roles you give them.
   person see everything.
 - Relate a vendor's, customer's or other party's people to *their own* company.
   They then see only the records that involve that company.
+- Owners are no exception: an owner sees every record only as one of your
+  company's contacts.
+
+Only an owner can make someone staff or change a staff member's sign-in: relating a
+person to your company, and changing **Email** or **Active** on one of its contacts.
+See [Your own company](../context/G008.md?id=your-own-company).
+
+## Remove a user
+
+An owner unticks **Active** on the user's contact. With no active contact for their
+sign-in email, they no longer see your company's records, even if the HAAL account
+still has roles. To stop them signing in at all, remove their roles in your
+database as well.
 
 Give each person **one active contact** with their sign-in email. If their email is
 on more than one, the dashboard warns them and links each contact so the extras can
