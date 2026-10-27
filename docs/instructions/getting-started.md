@@ -96,6 +96,13 @@ line in the grid. Click one to open the whole note, with who wrote it and when.
 If you can edit the record, you can edit the note there too. With delete rights on
 the record, you can delete it there. Notes are always public.
 
+## Attachments
+
+Most records have an **Attachments** tab for pictures and files. Images show as
+thumbnails; other files open when clicked. Tick attachments (or **Select All**) and
+click **Email Attachments** to email them from Shipper, or download them as an
+Outlook draft. See [Email Attachments](email-attachments.md?id=email-attachments-from-a-record).
+
 ## Companies and contacts
 
 [Companies and Contacts](../context/G008.md) holds everyone you deal with. A contact

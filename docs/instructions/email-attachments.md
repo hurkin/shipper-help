@@ -1,10 +1,13 @@
-# Email Attachments into Shipper
+# Email Attachments
 
-Anyone can add attachments to Shipper by email: drivers, inspectors, suppliers or
-your own staff from a phone. Older versions of ShipperXL Mobile's
-[Send Pictures](../context/M09.md) use this too.
+Email works both ways for attachments. Anyone can add attachments to Shipper by
+email, and you can email a record's attachments to anyone from Shipper.
 
-## Send an email
+## Email attachments into Shipper
+
+Drivers, inspectors, suppliers or your own staff from a phone can add attachments
+by email. Older versions of ShipperXL Mobile's [Send Pictures](../context/M09.md)
+use this too.
 
 1. Send it to your database's inbound email address (see *Set it up* below).
 2. Set the subject to the record to attach to:
@@ -44,11 +47,39 @@ mailbox Shipper sends from.
 An administrator enters these in **Admin > Settings**, **Email** tab. Click **Test
 connection** to check them. See [Settings](../context/settings.md).
 
+## Email attachments from a record
+
+Every **Attachments** tab in the web app can email its files: on agreements, bills,
+bookings, cargo, carrier contracts, companies and contacts, items, SKUs, assets and
+inspections.
+
+1. Tick the attachments to send, or tick **Select All**.
+2. Click **Email Attachments**.
+3. Fill in **To** and, if you like, **CC**. Type or paste addresses (separate them
+   with commas, semicolons or spaces), or click the contacts button beside the field
+   to choose a company and one of its contacts. A company with no contacts uses its
+   own email address. An address that isn't valid shows in red.
+4. **Subject** starts as the record, such as *Cargo ABCD1234567* or
+   *Sales Order 123456*. Change it if you like.
+5. Write the message. It can have bold, italic, underline, lists and links.
+6. Click **Send**. Shipper says how many people it was sent to.
+
+- **It comes from Shipper's mailbox,** the outbound address set up in
+  [Sending email](email-attachments.md?id=sending-email) below, not your own.
+  Replies go to you, and you get a copy (Bcc), so the email is in your own mailbox
+  too.
+- The attachments can come to 25 MB at most.
+- **Download .eml** gives an unsent email with the attachments, To, CC, subject and
+  message filled in. Open it in Outlook (classic Outlook opens it as a draft), check
+  it and send it from your own mailbox, as ShipperXL Desktop's **Send** did. If
+  outbound email isn't set up for your database, this is the only choice.
+
 ## Sending email
 
-Shipper sends email, such as invoices and [scheduled job](../context/G014.md)
-emails, through the **outbound** server in **Admin > Settings**. You need a mailbox
-that supports authenticated SMTP, with OAuth2 or a password.
+Shipper sends email, such as invoices, [scheduled job](../context/G014.md) emails
+and [attachments emailed from a record](email-attachments.md?id=email-attachments-from-a-record),
+through the **outbound** server in **Admin > Settings**. You need a mailbox that
+supports authenticated SMTP, with OAuth2 or a password.
 
 | Provider | Server | Notes |
 |---|---|---|

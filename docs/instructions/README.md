@@ -77,7 +77,7 @@ Some quick answers:
 - [Set Up a New Database](new-database.md)
 - [Hardware and Supplies](hardware.md)
 - [User Accounts](user-accounts.md)
-- [Email Attachments into Shipper](email-attachments.md)
+- [Email Attachments](email-attachments.md)
 - [Accounting Integration](accounting-integration.md), or the
   [QuickBooks Service](quickbooks-service.md) for QuickBooks Desktop
 - [MailChimp Integration](mailchimp.md)
