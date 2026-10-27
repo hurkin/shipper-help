@@ -10,6 +10,7 @@
   - [Create a Booking](bookings.md)
   - [Enter a Purchase Contract](purchase-contracts.md)
   - [Work Orders and the Scheduler](work-orders.md)
+  - [Auto Work Orders on Purchases and Sales](auto-work-orders.md)
   - [Receive Inventory](receive-inventory.md)
   - [Move Inventory](move-inventory.md)
   - [Ship Cargo](ship-cargo.md)

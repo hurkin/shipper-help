@@ -184,6 +184,7 @@ window.SEARCH_PATHS = [
   '/instructions/bookings',
   '/instructions/purchase-contracts',
   '/instructions/work-orders',
+  '/instructions/auto-work-orders',
   '/instructions/receive-inventory',
   '/instructions/move-inventory',
   '/instructions/ship-cargo',
@@ -231,4 +232,4 @@ window.SEARCH_PATHS = [
   '/release-notes/2026.1',
   '/release-notes/archive'
 ];
-window.SEARCH_VERSION = '300905524a04';
+window.SEARCH_VERSION = '5cb4f6e29075';

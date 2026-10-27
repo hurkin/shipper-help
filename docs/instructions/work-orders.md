@@ -34,7 +34,8 @@ work order makes it billable in [Create Bills](../context/W005.md).
    have its own under **This line only**.
 
 When a line is assigned to a cargo, or fulfilled on one, the work order appears on
-the cargo's **Work Orders** tab. See [Work Orders](../context/W001.md).
+the cargo's **Work Orders** tab. For a walk through a purchase and a sale, see
+[Auto Work Orders on Purchases and Sales](auto-work-orders.md).
 
 ## Plan the week with the scheduler
 
