@@ -65,16 +65,14 @@ None. Carrier Service Contracts are in the web under **Lists > Carrier Contracts
 
 ### 5.1 Cargo fields
 
-| Sev | Field | WinForms | Web |
-|---|---|---|---|
-| Medium | `Cargo.Processor_PartyId` (External Processor) | Editable | Set only when the cargo is created. Not editable afterwards |
+None. External Processor is on General, under Tare Pounds (2026-10-27).
 
 ### 5.2 Cargo related data
 
 | Sev | Change | Detail |
 |---|---|---|
 | Low | Fulfillment: assign a whole agreement | WinForms "choose/create a [type] Number → Make Assignment" assigned every line of an agreement at 0. The web adds one line at a time from a search. |
-| Low | Fulfillment grid | Gone: External Processor, agreement type and number, Buyer and Seller together, the three memos. |
+| Low | Fulfillment grid | Gone: agreement type and number, Buyer and Seller together, the three memos. |
 
 ---
 
@@ -214,6 +212,8 @@ These aren't differences from the WinForms client. They're the caveats, choices 
 | Reports | The Reports nav entry shows for everyone, even with no report features. `List.ashx` caches each session's list for 5 minutes. | 10-15 |
 | Custom reports | The web ignores CUSTREPS (Desktop still needs it to show any custom report): a custom report needs only the feature in its Description, and one with no Description is open to everyone. One whose Description is a standard report's mnemonic (spaces and case ignored) replaces it and takes its feature name, with a **Custom** chip. Every hand-off passes `p:WEBURL` (origin + `/shipper`). | 10-27 |
 | Work order Assigned Inventory | The tab holds the work order's `ItemInventory` rows with no transaction date (ucWorkOrder's assigned SKUs). They stay the work order's when it goes on a cargo, so the tab stays editable there, and they no longer show on the Inventory tab of a work order with no cargo. | 10-27 |
+| Booking queues | A booking queue lists `report.BookingGrid @QueueId` rows in the Bookings grid's columns, so cutoffs show with their time and departure and arrival are actual else planned. ERD (Earliest Receiving), Pickup, Ramp Due, LRD, Forwarder, Memo and Notes are hidden at first; Receipt, Delivery and Planned Arrival are gone (POL, POD and DLV replace them). WinForms keeps `dbo.GetQueueBookings`. | 10-27 |
+| External Processor | Edited in place on the cargo, work order and booking Fulfillment grids, with Work Zone and Work Center, and written to both the assignment and fulfilment of a row. The cargo's own is on General, under Tare Pounds; saving the cargo's grid after a processor edit there resets it, as WinForms did: the first row that differs from the cargo's, a fulfilment over an assignment. The line dialog's Fulfilment tab shows it read-only. | 10-27 |
 | Session sharing between tabs | A tab opened from a link in the app takes the session of the tab it came from over a BroadcastChannel; a bookmark or typed address lists the open sessions as **Continue as** on the login page. Logging off signs out every tab on that session. | 10-27 |
 
 ### 9.2 Loose ends and things to check
@@ -224,6 +224,7 @@ These aren't differences from the WinForms client. They're the caveats, choices 
 | shipper-db | `f6ebd7f` (`api.GetParties @Active` and IsActive, `api.GetItems @Active`, audit columns on `report.BookingGrid`, `AgreementGrid`, `CargoGrid`, `BillGrid`) is deployed on CALTEST only. shipper-ui from 211f066 on needs it on every instance before it ships: without it every party lookup by id fails. | 10-24 |
 | shipper-db | `d311988` (`api.GetActiveSkus` finds a SKU containing the search text; before, exact only) is pushed to dev, not yet deployed. | 10-26 |
 | shipper-db | `c12cd29` (full-text index on `dbo.WorkOrder.WorkOrderNumber`, `dbo.GetSearchResults` returns W001 rows) and `13fe5a1` (`report.AgreementGrid`: a contract fulfilled through its orders is on Fulfilled, and every agreement is on exactly one of Not Fulfilled and Fulfilled) are pushed to dev, not yet deployed. | 10-27 |
+| shipper-db | `bfc635d` (`report.BookingGrid @QueueId`; External Processor on `report.CargoFulfillment`, `ShipmentFulfillment` and `AgreementItemFulfillment`) is pushed to dev, not yet deployed. shipper-ui's booking queues read `report.BookingGrid @QueueId`, so they fail to load until it is deployed; the External Processor column stays blank until then. | 10-27 |
 | shipper-ui | Recent items: records that open only in a dialog (a line item) can't be reopened from the list. | 10-20 |
 | shipper-ui | In a tab left open across a deploy, Excel export does nothing and shows no message (its chunk is gone). | 10-22 |
 | shipper-ui | Per-route lazy loading wasn't done; it's the largest remaining startup saving, but needs reload-on-chunk-error handling. Only worth it if first loads are reported slow. | 10-22 |
