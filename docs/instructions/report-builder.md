@@ -18,7 +18,8 @@ which cost extra. See [Create Custom Reports](custom-reports.md).
 - **Language:** set to `=User!Language`.
 - **Description:** set to the report's feature code (such as `R163`). It ties the
   report to the feature permissions that decide who sees it. **If the code isn't a
-  known feature, the report isn't shown.**
+  known feature, the report isn't shown.** In the web app, a custom report with no
+  description is shown to everyone.
 
 ## Parameters Shipper fills in
 
@@ -36,6 +37,7 @@ runs. Use only the ones you need.
 | `Locale` | The 5-character locale, such as `en-US` |
 | `IsGlobal` | If present, the report shows on the main menu even if other rules would hide it |
 | `REPORT` | The name of the report as it was run |
+| `WEBURL` | The web app's address, such as `https://example.com/shipper`. Web app only |
 
 If a parameter has the same name as a screen's key, such as `BookingId` on a
 booking, the report is offered on that screen automatically.
@@ -60,11 +62,15 @@ To open an attachment:
 
 where `30717` is the attachment id and `2011-08-17-020933.jpg` its file name.
 
+In the web app, a report can link to a record's page with `WEBURL`, for example
+`=Parameters!WEBURL.Value & "/workorders/" & Fields!WorkOrderId.Value`.
+
 ## Where to save
 
 - Save custom reports in `/Custom/[your folder]`.
 - **A custom report with the same feature code as a standard report replaces it**
-  everywhere, and takes its permissions.
+  everywhere, and takes its permissions. In the web app it also takes the standard
+  report's name, marked **Custom**.
 - Otherwise custom reports show only under [Custom Reports](../context/CUSTREPS.md).
 
 ## Related

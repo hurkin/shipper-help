@@ -16,8 +16,9 @@ There are several ways to report on your own data. Some need advanced skills.
 - Download [Report Builder](https://www.microsoft.com/en-us/download/details.aspx?id=42301).
 - Connect to the report server with credentials from support@shipperxl.com. This
   access costs extra.
-- Published custom reports appear in Shipper for roles that have the Custom
-  Reports feature.
+- Published custom reports appear in Shipper for roles that have the feature in
+  the report's description (in ShipperXL Desktop, the Custom Reports feature as
+  well).
 - See [Using Report Builder](report-builder.md) for report properties, parameters
   and links.
 

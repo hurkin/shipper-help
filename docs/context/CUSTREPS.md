@@ -1,7 +1,8 @@
 # Custom Reports
 
-Custom reports are reports built for your company, beyond the standard set. Roles
-with this feature see the custom reports published for your database.
+Custom reports are reports built for your company, beyond the standard set. In
+ShipperXL Desktop, roles with this feature see the custom reports published for
+your database.
 
 ## Things to know
 
@@ -11,7 +12,10 @@ with this feature see the custom reports published for your database.
 - Each custom report has its own rules for what it includes. Ask whoever built it.
 - A custom report is shown only to roles with its own feature, set in the report's
   description. One that uses a standard report's feature replaces that report
-  everywhere it appears, so it isn't listed here.
+  everywhere it appears, under that report's name, so it isn't listed here.
+- In the web app, a custom report needs only the feature in its description, and
+  one with no description is shown to everyone. Custom reports are marked
+  **Custom**.
 - A custom report with a parameter matching a screen's key, such as a booking's,
   is also offered on that screen.
 

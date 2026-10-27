@@ -52,10 +52,14 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
   the bottom.
 - **Search everything**, in the header, finds any record you can open by its
   number, name or reference: bookings, cargo, scale tickets, agreements, bills,
-  parties, items, SKUs and carrier contracts. It starts after 3 characters and lists
+  parties, items, SKUs, work orders and carrier contracts. It starts after 3 characters and lists
   each match's type and description. Choose one to open it. It is the web app's
   version of ShipperXL Desktop's F3 search.
 - A list's search box sits at the right of its filters.
+- A link you open in a new tab (Ctrl+click, middle-click or **Open in new tab**)
+  stays signed in as the tab it came from. A tab opened from a bookmark or a typed
+  address offers **Continue as** each session open in another tab, above the
+  sign-in form. Logging off signs out the other tabs on that session too.
 - Lookups start searching after you type a few characters. If nothing matches and
   you can add records of that kind, the lookup offers to create one.
 - Grids remember their filters and search text until you close the browser tab.
