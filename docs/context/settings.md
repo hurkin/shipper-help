@@ -1,7 +1,8 @@
 # Settings
 
 Settings is your instance's own configuration: your company, its default currency
-and weight unit, its logo, its email servers and its accounting defaults. It is the
+and weight unit, its logo, its email servers and text messaging, and its
+accounting and payment integrations. It is the
 web version of ShipperXL Desktop's options, and only instance and application owners
 see it. It comes first under **Admin**.
 
@@ -51,15 +52,117 @@ Shipper reads email from the **inbound** server (IMAP) and sends it through the
 - **MailChimp API Key** connects your MailChimp account for scheduled jobs that
   update MailChimp.
 
+### Twilio
+
+Twilio sends Shipper's text messages (SMS): Stripe payment and autopay links, and
+scheduled jobs that send a text. Find all three values in the
+[Twilio Console](https://console.twilio.com), under **Account Info**.
+
+- **Account** is the Account SID, starting `AC`.
+- **Secret** is the Auth Token.
+- **Sender** is the Twilio phone number texts come from, written with its country
+  code, such as `+15035550100`.
+
+Leave them blank and Shipper sends no texts.
+
 ## Accounting
 
-- **Default Item Code**, **AR Account for Invoices**, **Default Expense Account**
-  and **Default Income Account** are the codes your accounting system uses when
-  Shipper posts to it.
-- **Send invoices by email when they are posted** emails each invoice once it is
-  posted to the accounting integration, if one is set up.
-- **Integrations** shows which of QuickBooks Online, Zoho Books and Stripe are set up
-  for this instance. Support sets them up.
+Shipper copies invoices and bills to one accounting package, QuickBooks Online or
+Zoho Books, and payments back from it. Stripe can collect invoice payments with
+either. See [Accounting Integration](../instructions/accounting-integration.md) for
+what is copied. Support can set these up with you.
+
+Changes reach the integrations within a few minutes of saving.
+
+### Integrations
+
+The top of the tab shows whether each of QuickBooks Online, Zoho Books and Stripe is
+set up, and what it still needs. It follows the fields as you type, before you save.
+
+- An integration is on as soon as its credentials are filled in, and off when they
+  are blank. There is no separate switch.
+- If both QuickBooks Online and Zoho Books are set up, only QuickBooks Online is used.
+  Clear one package's Client Id and Client Secret to use the other.
+- QuickBooks Online also needs a connection to your QuickBooks company, which support
+  makes with you. Until then it shows as not configured, even with its Client Id and
+  Client Secret filled in.
+
+### Sending invoices
+
+**Send invoices by email when they are posted** emails each invoice to the customer
+once it is posted to the accounting integration, with its Stripe payment link if
+Stripe is on. Unticked, Shipper doesn't contact customers about invoices at all, by
+email or text, and Stripe starts no new charges. Invoices are still posted.
+
+### QuickBooks Online
+
+Item and account fields hold **names** as they appear in QuickBooks. A name
+QuickBooks doesn't have falls back to its first account of that type. An item's own
+external income or expense account in Shipper wins over these defaults.
+
+- **Default Item Code** is the QuickBooks item used on an invoice line that has no
+  Shipper item, or whose item can't be copied. Blank, the item is named after the
+  **Income Account**, or `Services`. It is created in QuickBooks if missing.
+- **AR Account for Invoices** is the accounts receivable account on every invoice.
+  Blank uses QuickBooks' default.
+- **Expense Account** goes on items Shipper copies and on every bill line.
+- **Income Account** goes on items Shipper copies, and on the default item.
+- **Base URL** is the QuickBooks API address. Leave it blank unless support asks
+  you to set it.
+- **Environment** is **production** for a real company, or **sandbox** for an Intuit
+  developer sandbox company. Blank means production.
+- **Client Id** and **Client Secret** are the app's keys from the Intuit developer
+  portal.
+
+### Zoho Books
+
+Zoho Books needs no separate connection step: the Organization Id, Data Center,
+Client Id and Client Secret are all it takes.
+
+- **Organization Id** is in Zoho Books under **Settings > Organization Profile**, and
+  in the address bar when you are signed in to Zoho Books.
+- **Data Center** is where your Zoho account lives: `com` for zoho.com, `eu` for
+  zoho.eu, and so on. Blank means `com`.
+- **Client Id** and **Client Secret** come from a **Self Client** made in the Zoho
+  API Console for the same data center (api-console.zoho.com, api-console.zoho.eu
+  ...), on its **Client Secret** tab. Choose Self Client, not Server-based.
+- **Payments Account** is the bank account customer payments are deposited to, such
+  as `Checking`. Blank, or a name Zoho Books doesn't have, deposits to Undeposited
+  Funds.
+- **Income Account** goes on items Shipper creates in Zoho Books. An item that
+  already exists keeps its own.
+- **Expense Account** goes on every bill line.
+- **Webhook Signing Secret** and **Webhook URL Slug** let Zoho Books tell Shipper
+  about a payment as soon as it is made. Without them, payments still come across on
+  the hourly check. To set it up:
+  1. Generate a slug with the button in **Webhook URL Slug**, then copy the webhook
+     URL shown under it.
+  2. In Zoho Books, open **Settings > Automation > Webhooks** and add a webhook to
+     that URL for payments created and updated. Send it as **parameters**, not a raw
+     JSON body.
+  3. Copy Zoho's signing secret into **Webhook Signing Secret**, and save.
+
+### Stripe
+
+Stripe collects invoice payments by bank debit (ACH in the US, pre-authorized debit
+in Canada) or card, and records them in whichever accounting package is set up.
+
+- **Secret API Key** is in the Stripe Dashboard under **Developers > API keys**. It
+  starts `sk_live_` (or `sk_test_` for a test account). Blank turns Stripe off.
+- **Webhook URL Slug** and **Webhook Signing Secret** let Stripe tell Shipper when a
+  payment succeeds, fails or is returned. To set them up:
+  1. Generate a slug with the button in **Webhook URL Slug**, then copy the webhook
+     URL shown under it.
+  2. In the Stripe Dashboard, open **Developers > Webhooks**, add an endpoint at that
+     URL, and choose these events: `payment_intent.succeeded`,
+     `payment_intent.payment_failed`, `invoice_payment.paid` (or `invoice.paid`),
+     `payment_method.attached`, `payment_method.detached`, `charge.refunded`,
+     `charge.dispute.created` and `radar.early_fraud_warning.created`.
+  3. Copy the endpoint's signing secret, which starts `whsec_`, into **Webhook
+     Signing Secret**, and save.
+- In Stripe, turn on ACH Direct Debit (USD), Pre-authorized debit (CAD) and cards
+  under **Settings > Payment methods**. If a Stripe-to-QuickBooks sync app is
+  installed, turn off its payment creation, so only Shipper closes invoices.
 
 ## Related
 

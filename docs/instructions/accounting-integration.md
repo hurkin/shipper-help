@@ -20,8 +20,8 @@ Still on QuickBooks Desktop? See [QuickBooks Service](quickbooks-service.md).
 
 Email support@shipperxl.com to have it set up for your database. It is quick.
 
-Then set the account codes Shipper posts with in **Admin > Settings**, on the
-**Accounting** tab. See [Settings](../context/settings.md).
+Then fill in its section, and the account names Shipper posts with, in **Admin >
+Settings** on the **Accounting** tab. See [Settings](../context/settings.md).
 
 ## How accounting codes are chosen
 
@@ -41,9 +41,9 @@ earlier one:
    assignment of its cargo or agreement line, else the booking's cargo.
 4. **Item overrides:** an item's accounting overrides that match the line's work
    zone, or the seller's country or region, replace each code they set.
-5. **The default account** in **Admin > Settings**, **Default Expense Account** for
-   bills and **Default Income Account** for invoices, fills an account that is still
-   empty.
+5. **The default account** in **Admin > Settings**, under **QuickBooks Online**:
+   **Expense Account** for bills and **Income Account** for invoices, fills an
+   account that is still empty.
 
 A bill line's description also starts with its work zone, such as *Ellensburg:
 Squeeze Loading*.
