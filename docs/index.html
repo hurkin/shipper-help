@@ -29,6 +29,27 @@
     } catch (e) {}
   </script>
   <script>
+    // A folder's route needs its trailing slash: Docsify reads #/release-notes
+    // as release-notes.md (a 404), and relative links and the section sidebar
+    // resolve against the folder only with the slash. Add it before Docsify
+    // routes, on load and on every hash change (this listener runs before
+    // Docsify's, and replaceState fires no second hashchange). The folders are
+    // the search paths ending in / (scripts/build-index.py).
+    (function () {
+      var folders = (window.SEARCH_PATHS || []).filter(function (p) {
+        return p.length > 1 && p.charAt(p.length - 1) === '/';
+      });
+      function addSlash() {
+        var m = /^#(\/[^?]*?)(\?.*)?$/.exec(location.hash);
+        if (m && folders.indexOf(m[1] + '/') >= 0) {
+          history.replaceState(history.state, '', '#' + m[1] + '/' + (m[2] || ''));
+        }
+      }
+      addSlash();
+      window.addEventListener('hashchange', addSlash);
+    })();
+  </script>
+  <script>
     // Framed pages (shipper-ui's help panel) never show the sidebar. Elsewhere,
     // ?sidebar=0 hides it, before the # or in the route
     // (#/context/I001?sidebar=0), and it stays hidden as links are followed.
