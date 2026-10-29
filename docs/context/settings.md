@@ -79,13 +79,11 @@ Changes reach the integrations within a few minutes of saving.
 The top of the tab shows whether each of QuickBooks Online, Zoho Books and Stripe is
 set up, and what it still needs. It follows the fields as you type, before you save.
 
-- An integration is on as soon as its credentials are filled in, and off when they
-  are blank. There is no separate switch.
+- An integration is on as soon as it is set up, and off when it isn't. There is no
+  separate switch. Zoho Books and Stripe are set up by filling in their credentials;
+  QuickBooks Online by connecting your QuickBooks company (below).
 - If both QuickBooks Online and Zoho Books are set up, only QuickBooks Online is used.
-  Clear one package's Client Id and Client Secret to use the other.
-- QuickBooks Online also needs a connection to your QuickBooks company, which support
-  makes with you. Until then it shows as not configured, even with its Client Id and
-  Client Secret filled in.
+  To use Zoho Books instead, ask support to disconnect QuickBooks Online.
 
 ### Sending invoices
 
@@ -107,12 +105,21 @@ external income or expense account in Shipper wins over these defaults.
   Blank uses QuickBooks' default.
 - **Expense Account** goes on items Shipper copies and on every bill line.
 - **Income Account** goes on items Shipper copies, and on the default item.
-- **Base URL** is the QuickBooks API address. Leave it blank unless support asks
-  you to set it.
-- **Environment** is **production** for a real company, or **sandbox** for an Intuit
-  developer sandbox company. Blank means production.
-- **Client Id** and **Client Secret** are the app's keys from the Intuit developer
-  portal.
+
+**Connect to QuickBooks** links Shipper to your QuickBooks company:
+
+1. Save any changes first. The button waits until there are none.
+2. Select **Connect to QuickBooks**. QuickBooks opens in a new window.
+3. Sign in to QuickBooks, choose your company and allow the connection. The window
+   says when it is connected, and you can close it.
+
+Back in Settings, the section shows the company it is connected to (QuickBooks'
+company ID). Finish signing in within five minutes. If your browser blocks the new
+window, allow pop-ups for Shipper and try again.
+
+Use **Reconnect to QuickBooks** to connect a different company, or if QuickBooks
+stops accepting Shipper's connection, for example after a long time unused or after
+the connection was removed in QuickBooks. Only one company is connected at a time.
 
 ### Zoho Books
 

@@ -21,7 +21,8 @@ Still on QuickBooks Desktop? See [QuickBooks Service](quickbooks-service.md).
 Email support@shipperxl.com to have it set up for your database. It is quick.
 
 Then fill in its section, and the account names Shipper posts with, in **Admin >
-Settings** on the **Accounting** tab. See [Settings](../context/settings.md).
+Settings** on the **Accounting** tab. For QuickBooks Online, connect your QuickBooks
+company there with **Connect to QuickBooks**. See [Settings](../context/settings.md).
 
 ## How accounting codes are chosen
 
