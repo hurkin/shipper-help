@@ -52,9 +52,18 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
   the bottom.
 - **Search everything**, in the header, finds any record you can open by its
   number, name or reference: bookings, cargo, scale tickets, agreements, bills,
-  parties, items, SKUs, work orders and carrier contracts. It starts after 3 characters and lists
-  each match's type and description. Choose one to open it. It is the web app's
-  version of ShipperXL Desktop's F3 search.
+  parties, items, SKUs, work orders and carrier contracts. It also finds the queues
+  you can see by name, and opens one on its section's Queues page. It starts after
+  3 characters and lists each match's type and description. Choose one to open it.
+  It is the web app's version of ShipperXL Desktop's F3 search.
+- The **Dashboard** has a card for each menu section you can use (Inbound,
+  Processing, Outbound and Documentation). Each card has a bar for each of the
+  section's lists, such as Queues, Work Orders, Purchase Orders or Bookings, split
+  by status, with each status's count beneath it. Click a part of the bar, or its
+  count, to open the list on that status. Queue counts are those on the section's
+  Queues page, and **Overdue** is part of **Queued now**. The chart above the bars
+  covers the last 30 days (bookings also the next 30), and the buttons beside it
+  switch between the section's charts.
 - A list's search box sits at the right of its filters.
 - A link you open in a new tab (Ctrl+click, middle-click or **Open in new tab**)
   stays signed in as the tab it came from. A tab opened from a bookmark or a typed

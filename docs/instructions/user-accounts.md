@@ -55,6 +55,10 @@ company (see *Add a user*).
 
 ## Troubleshooting
 
+A record newly linked to a user's company, for example a booking whose forwarder
+was just set, can take up to 6 minutes to appear for that user. Removing a link
+takes as long to hide the record.
+
 *"You do not have permission to Shipment XXXXXX because your user account is not
 affiliated with this record in any way."* Make sure the user's contact belongs to
 the booking's shipper, its forwarder, or your own company.

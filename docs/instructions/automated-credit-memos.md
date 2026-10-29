@@ -20,7 +20,7 @@ work order) for each marked breakdown row.
 - It can take up to 10 minutes after the invoice is completed.
 - It runs once per invoice. Changing the invoice or the breakdown afterwards does
   not update the credit memo.
-- In the web app, **Auto Bill** shows only on purchase lines. Mark sales lines in
-  ShipperXL Desktop.
+- **Auto Bill** is on the line's Variable Costs in the web app and in ShipperXL
+  Desktop, for sales and purchase lines alike.
 
 See also: [Scheduled Jobs](../context/G014.md), [Credit Memos](../context/IV05.md).

@@ -15,9 +15,12 @@ as the buy side of a back-to-back trade.
    - Enter the quantity, its unit (usually Each, for bales), and the purchase
      amount and what it is per (for example, per ton). The amount fills in from
      your cost list when one matches.
-   - Under **Variable Costs**, add costs you expect to pay later (trucking, tarping,
-     insurance) to get an all-in purchase cost. The **Auto Bill** box does nothing
-     on its own. It is read by scheduled jobs that support sets up for you.
+   - Once the line is saved, add costs you expect to pay later (trucking, tarping,
+     insurance) under **Variable Costs** to get an all-in purchase cost. Shipper
+     shows the cost per unit and the total estimated cost beneath them, and
+     **Copy From Other Line Items** copies another line's costs. The **Auto Bill**
+     box does nothing on its own. It is read by scheduled jobs that support sets up
+     for you. See [Variable Costs](../context/A004.md?id=variable-costs).
 5. Click **Save**, then use **Reports** to print the **Agreement** for the seller.
 
 ## Good to know
