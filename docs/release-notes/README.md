@@ -2,8 +2,7 @@
 
 <img src="https://hurkinapps.blob.core.windows.net/apps/images/2026-4.jpg" alt="2026.4 release" width="500">
 
-Releases are planned quarterly. Each is deployed in an evening window, and the apps
-ask you to update the next time you start them.
+<br>
 
 | Release | Deployment Date |
 | ------- | -------- |
@@ -13,4 +12,7 @@ ask you to update the next time you start them.
 | [2026.2](2026.2.md) | March 25, 2026 |
 | [2026.1](2026.1.md) | December 31, 2025 |
 
+<br>
+
+Going forward, releases will happen as needed, instead of the quarterly schedule maintained previously.
 Earlier releases, from 2018 to 2025.5, are in the [archive](archive.md).
