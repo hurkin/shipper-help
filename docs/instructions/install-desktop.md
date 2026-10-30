@@ -5,7 +5,7 @@ ShipperXL Desktop is the full-featured Windows app for day-to-day work.
 - Requires Windows 10 or 11.
 - You must be signed in to Windows as an administrator to install it.
 
-[Download ShipperXL Desktop](https://hurkinapps.blob.core.windows.net/apps/downloads/Hurkin.Shipper.Client.Setup.msi)
+[Download ShipperXL Desktop](https://hurkinapps.blob.core.windows.net/apps/prod/Hurkin.Shipper.Client.Setup.msi)
 
 The app updates itself: after a release it asks to update the next time you start
 it or sign in.

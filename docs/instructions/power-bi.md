@@ -10,8 +10,8 @@ Power BI is for analysis: trends over time, not real-time numbers. See
   subscription and lets you share reports, build dashboards and mobile views, and
   refresh data on a schedule.
 - Your database code.
-- Your email address and Shipper password.
-- This [sample file](https://hurkinapps.blob.core.windows.net/apps/downloads/BLANK.pbix).
+- An API-KEY which you can obtain by contacting [support@shipperxl.com](mailto:support@shipperxl.com)
+- This [sample file](https://hurkinapps.blob.core.windows.net/apps/downloads/SemanticModel.pbix).
 
 ## Connect
 
@@ -20,17 +20,13 @@ Power BI is for analysis: trends over time, not real-time numbers. See
 3. Choose **Transform data > Edit parameters**.
 
    ![[power-bi-edit-parameters.png|300]]
-4. Enter your database code as the **Instance**, and click **OK**.
+4. Enter your database as the **Instance** and enter your API-KEY, and click **OK**.
 
    ![[power-bi-instance.png|500]]
 5. Click **Apply changes**.
 
    ![[power-bi-apply-changes.png|500]]
-6. Enter your email address and Shipper password. Choose **Basic** on the left,
-   **and** pick the last entry in the level list, the one ending in your database
-   code. Click **Connect**.
-
-   ![[power-bi-credentials.png|500]]
+6. When connecting, choose Anonymous.
 
 ## Good to know
 

@@ -27,7 +27,7 @@ Each scale supports one kiosk.
 ## Install the kiosk software
 
 1. Download the
-   [kiosk installer](https://hurkinapps.blob.core.windows.net/apps/downloads/Hurkin.Scale.Client.Setup.msi).
+   [kiosk installer](https://hurkinapps.blob.core.windows.net/apps/prod/Hurkin.Scale.Client.Setup.msi).
 2. If [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) isn't
    installed, you are asked to install it. Install both the **ASP.NET Core Runtime
    10.0** and the **.NET Desktop Runtime 10.0** (Windows x64).

@@ -20,7 +20,7 @@ Set up and test an ODBC data source named **QUICKBOOKS**.
 ## Install the service
 
 1. On the server, download and run the
-   [QuickBooks Service installer](https://hurkinapps.blob.core.windows.net/apps/downloads/Hurkin.Shipper.QuickBooksService.msi).
+   [QuickBooks Service installer](https://hurkinapps.blob.core.windows.net/apps/prod/Hurkin.Shipper.QuickBooksService.msi).
 2. Go to `C:\Program Files\Hurkin Software\ShipperToQuickBooks` and open
    `Hurkin.Shipper.QuickBooksService.exe.config` in Notepad.
 3. Change `<value />` to `<value>the-value-you-set</value>` for:
