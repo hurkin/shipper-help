@@ -65,10 +65,12 @@ Read [How Shipper Works](how-shipper-works.md) for how these records connect.
   covers the last 30 days (bookings also the next 30), and the buttons beside it
   switch between the section's charts.
 - A list's search box sits at the right of its filters.
-- A link you open in a new tab (Ctrl+click, middle-click or **Open in new tab**)
-  stays signed in as the tab it came from. A tab opened from a bookmark or a typed
-  address offers **Continue as** each session open in another tab, above the
-  sign-in form. Logging off signs out the other tabs on that session too.
+- A new tab or window, such as one a report opens, stays signed in when only one
+  session is open in your other tabs. With two or more open (signed in to two
+  databases, say), a link you open in a new tab (Ctrl+click, middle-click or
+  **Open in new tab**) stays signed in as the tab it came from, and any other new
+  tab offers **Continue as** each open session, above the sign-in form. Logging
+  off signs out the other tabs on that session too.
 - Lookups start searching after you type a few characters. If nothing matches and
   you can add records of that kind, the lookup offers to create one.
 - Grids remember their filters and search text until you close the browser tab.
