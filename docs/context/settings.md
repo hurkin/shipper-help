@@ -1,9 +1,9 @@
 # Settings
 
-Settings is your instance's own configuration: your company, its default currency
+Settings is your database's own configuration: your company, its default currency
 and weight unit, its logo, its email servers and text messaging, and its
 accounting and payment integrations. It is the
-web version of ShipperXL Desktop's options, and only instance and application owners
+web version of ShipperXL Desktop's options, and only database and application owners
 see it. It comes first under **Admin**.
 
 ## Things to know
@@ -29,7 +29,7 @@ see it. It comes first under **Admin**.
 - **Company Logo** is printed on documents. Use a PNG or JPEG of about 250 x 75
   pixels. **Upload** stages it and **Remove** clears it, both kept when you save.
   With no logo, documents use the application's. Uploading needs a file store for
-  the instance. Without one, the button is unavailable.
+  the database. Without one, the button is unavailable.
 
 ## Email
 

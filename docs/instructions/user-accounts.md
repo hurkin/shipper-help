@@ -45,13 +45,13 @@ be deactivated, keeping the one that belongs to the right company.
 
 ## What the dashboard shows
 
-A user from another company sees which companies' records they can reach on the
-dashboard, under the title: *Instance: TEST. You have access to Acme.* Your own
-staff see only the instance.
+The dashboard names the database beside its help icon. A user from another
+company also sees which companies' records they can reach, under the welcome:
+*You have access to Acme.* Your own staff see only the database.
 
 If a user's email isn't on an active contact of any company, the dashboard says
-they see only the records they created. Add their email to a contact of their
-company (see *Add a user*).
+they aren't linked to any company, and see only the records they created and those
+that name them. Add their email to a contact of their company (see *Add a user*).
 
 ## Troubleshooting
 

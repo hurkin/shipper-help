@@ -175,7 +175,7 @@ Differences from WinForms that are intended. They're listed so they can be expla
 
 ## 9. Open notes from development sessions
 
-These aren't differences from the WinForms client. They're the caveats, choices and suggestions raised at the end of Claude Code sessions (2026-10-09 to 2026-10-28, every repo under `hurkin/`), kept here because the session transcripts are the only other place they're written down. Items later fixed have been left out. Each says when it was raised; "decide" marks a choice that is yours to make.
+These aren't differences from the WinForms client. They're the caveats, choices and suggestions raised at the end of Claude Code sessions (2026-10-09 to 2026-10-30, every repo under `hurkin/`), kept here because the session transcripts are the only other place they're written down. Items later fixed have been left out. Each says when it was raised; "decide" marks a choice that is yours to make.
 
 ### 9.1 Choices made in the web app that you may want changed
 
@@ -226,6 +226,9 @@ These aren't differences from the WinForms client. They're the caveats, choices 
 | Dashboard | A card per menu section, a 100% bar per grid under its statuses, a segment opening the grid on that status. Queue counts are each node's Queues page's for the user, and Overdue is within Queued now; when `/api/queues` fails the card says the counts are unavailable. The Inventory card is hidden for now (`hidden: true` in `dashboardConfig.js`) (ui 73caafa, 5a63b9c). | 10-29 |
 | Search everything | Also offers the queues on the user's Queues pages, each once, opening on its first node; dropped when the session or Q001 level changes (ui 73caafa, b89f03b). | 10-29 |
 | Sign-in machine name | The web sign-in sends the page's host as `machineName` and the email as `networkName`, so HAAL's sessions and license authorizations name the deployment and a new IP or browser isn't counted as another device (MaxMachines) or user (MaxUsers with UseNetworkUser) (ui 73caafa). | 10-29 |
+| Vehicle tare | Choosing a vehicle whose Reference 1 is TARE and Reference 2 a whole weight fills in an empty or 0 tare, Tare Weighed now, and appends " manual tare <weight>" to Driver / Memo, as ucMiniScaleTicket. Unlike Windows, choosing another vehicle (or none, or another drayman) before saving takes back the tare it filled in, unless the tare was weighed or typed since, and the vehicle no longer sets the drayman. Needs shipper-db `b11e1f2` (`dbo.GetAssets` returns Reference1/2) deployed; until then no vehicle carries a tare (ui, not yet pushed). | 10-30 |
+| Dashboard access line | "Database: X" sits beside the help icon; beneath the welcome, a party-scoped user reads "You have access to A and B." or "You aren't linked to any company." plus "You see the records you created and those that name you". `/api/me/access` tells a company from a person by its class, since a company converted from a contact in Windows keeps its PartyPerson row (Sprint Forwarders on CALTEST) (api 7d0d61a). | 10-30 |
+| Terminology | The web app says "database" for the HAAL instance everywhere a user reads it, including the sign-in's Database field. | 10-30 |
 | Caller scope age | shipper-api calls `security.GetCallerScope` with `@MaxAgeSeconds 360`, so a record linked to or unlinked from a party-scoped caller's parties can take up to 6 minutes to show or hide for them (api fdffb6d, ee46d8d). Documented in the user accounts guide. | 10-29 |
 
 ### 9.2 Loose ends and things to check
@@ -243,6 +246,8 @@ These aren't differences from the WinForms client. They're the caveats, choices 
 | shipper-ui | Recent items: records that open only in a dialog (a line item) can't be reopened from the list. | 10-20 |
 | shipper-ui | In a tab left open across a deploy, Excel export does nothing and shows no message (its chunk is gone). | 10-22 |
 | shipper-ui | Per-route lazy loading wasn't done; it's the largest remaining startup saving, but needs reload-on-chunk-error handling. Only worth it if first loads are reported slow. | 10-22 |
+| shipper-db | `security.GetCallerScope` decides a matched party is a person by a PartyPerson row, not its class. A company converted from a contact in Windows keeps that row (Sprint Forwarders, 1316, and SPRINT FORWARDERS, INC. - CA, 1317, on CALTEST), so a sign-in email on such a company would be widened to every party related to it. Suggested: test the PERSON class, as `/api/me/access` now does. *Decide.* | 10-30 |
+| shipper-db | `b11e1f2` (`dbo.GetAssets` returns Reference1 and Reference2, for the vehicle tare) is committed, not pushed or deployed. | 10-30 |
 | shipper-ui | `src/auth/shp-features.tsv` still lists D002, I007 and G009 as HIDDEN. Once the table is re-dumped, `features.test.js` fails until they move to UI. | 10-09 |
 | Editions | Owners are trimmed to their edition. Not verified: whether HAAL sends an owner the edition's full feature list; if it sends few, owners lose features. | 10-15 |
 | Row-level security | Reports go through the WCF/SSRS path, so they still show every record to party-scoped users. Every instance is scoped since shipper-api `8dc36ef` (`PARTY_SCOPED_INSTANCES` is gone), owners included: an owner who isn't one of the company's contacts sees only their parties' records. | 10-09, 10-27 |
