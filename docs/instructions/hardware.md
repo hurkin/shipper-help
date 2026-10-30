@@ -69,7 +69,7 @@ they get a good view. Each needs a 110V outlet and WiFi.
 A sign for driver-on-scale operation: drivers use ShipperXL Mobile to weigh in,
 weigh out and be emailed a weight ticket.
 
-- To order, contact sales@hurkin.com. $650 each.
+- To order, contact sales@shipperxl.com. $650 each.
 - Mount up to two per scale, so drivers can see one coming in from either direction.
 - The only wire is 110V power. It needs WiFi to work with the
   [kiosk](kiosk.md).

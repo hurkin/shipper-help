@@ -75,7 +75,7 @@ days.
 ## Changes to your account
 
 To change your billing address, billing email or anything else about your account,
-email billing@hurkin.com.
+email billing@shipperxl.com.
 
 ## Taxes
 
@@ -100,7 +100,7 @@ invoice, whatever its size.
 takes 2 to 5 business days after we start the debit. The invoice closes when the
 funds settle. Your bank may show the payment as pending until then.
 
-**How do I dispute a charge?** Email billing@hurkin.com before the due date, with the
+**How do I dispute a charge?** Email billing@shipperxl.com before the due date, with the
 invoice number and the line in question.
 
 *Last updated: August 2026.*
