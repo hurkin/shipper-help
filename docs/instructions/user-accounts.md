@@ -53,6 +53,26 @@ If a user's email isn't on an active contact of any company, the dashboard says
 they aren't linked to any company, and see only the records they created and those
 that name them. Add their email to a contact of their company (see *Add a user*).
 
+## Reports for outside users
+
+**Most reports aren't limited to the user's company.** Screens show an outside
+user only their company's records, but a report shows whatever it finds, across
+every company. Choose carefully which reports the roles you give outside users
+include.
+
+- **Safe:** reports on one record, opened from its screen, such as an agreement's,
+  a bill's or a work order's. They show only the record the user opened.
+- **Limited:** [Booking Status](../context/R154.md) and
+  [Shipment Status (Legal)](../context/R143.md) are the only standard reports that
+  narrow their choices to the user's own company.
+- **Not safe:** reports covering many records or a company you choose, such as
+  summaries, statements, inventory, rates and schedules, show every company's
+  records. Keep them to roles for your own staff.
+
+Custom reports aren't limited either, unless they are written to be (see
+[Using Report Builder](report-builder.md)). In the web app, a custom report with no
+description is shown to everyone, outside users included.
+
 ## Troubleshooting
 
 A record newly linked to a user's company, for example a booking whose forwarder

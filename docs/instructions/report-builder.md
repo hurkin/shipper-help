@@ -33,7 +33,8 @@ runs. Use only the ones you need.
 | `IMG` | Your company logo's URL |
 | `ALIAS` | The user's alias |
 | `USERID` | The user's account id |
-| `USERPARTY` | The id of the user's contact record |
+| `USERPARTY` | The id of the user's contact record. Not filled in the web app: use `USEREMAIL` |
+| `USEREMAIL` | The user's sign-in email |
 | `Locale` | The 5-character locale, such as `en-US` |
 | `IsGlobal` | If present, the report shows on the main menu even if other rules would hide it |
 | `REPORT` | The name of the report as it was run |
@@ -41,6 +42,19 @@ runs. Use only the ones you need.
 
 If a parameter has the same name as a screen's key, such as `BookingId` on a
 booking, the report is offered on that screen automatically.
+
+## Outside users
+
+A report sees every record in the database, whoever runs it. To show an outside
+user only their company's records, filter on the companies they act as:
+
+```sql
+SELECT PartyId FROM security.CallerParties(@USEREMAIL)
+```
+
+The result includes `1`, your own company, for your staff. Booking Status and
+Shipment Status (Legal) are written this way. See
+[Reports for outside users](user-accounts.md?id=reports-for-outside-users).
 
 ## Links in reports
 
