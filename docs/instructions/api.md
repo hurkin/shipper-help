@@ -24,11 +24,14 @@ password. For server apps, API keys are preferred.
    session id, user details, roles, feature access and settings.
 5. To look up inventory for a SKU, your app calls the Shipper service:
    - The base URL comes from the **SVCURL** setting in the session.
-   - The database code and SKU are part of the URL.
-   - Use Bearer authentication with the base64-encoded session id.
+   - The ItemSKUId is part of the URL.
+   - Use a Bearer authentication header with the base64-encoded session id, or use an api-key header with the API key (not encoded)
 
    For example, `https://api.shipperxl.com/api/sku/1764` returns the inventory for
    that SKU.
+
+## Notes
+   - Some endpoints include paging. The default paging is 250 items. If the rows received is 250, then call the next page for additional rows until the rows received is less than 250.
 
 ## Related
 
