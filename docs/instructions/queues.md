@@ -43,7 +43,7 @@ Each queue lists two sets of roles:
 
 - **Roles that see and work it.** Only these roles see the queue and its items. If
   empty, everyone does.
-- **Roles that may add.** Only these roles can put items into the queue, including
+- **Roles that may only add.** Only these roles can put items into the queue, including
   moving items into it with Next Queue. If empty, everyone can.
 
 To move items on with **Next Queue**, you need to be allowed to add to the next
