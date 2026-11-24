@@ -6,7 +6,7 @@
 
 | Release | Deployment Date |
 | ------- | -------- |
-| [2026.4](2026.4.md) | October 31, 2026 |
+| [2026.4](2026.4.md) | October 31, 2026 <br> Latest patch: [November 25, 2026](2026.4.md) |
 | [2026.3](2026.3.md) | July 1, 2026 |
 | [Database Migrations](2026-05-database-migrations.md) | May 25, 2026 |
 | [2026.2](2026.2.md) | March 25, 2026 |

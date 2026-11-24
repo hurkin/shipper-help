@@ -10,6 +10,62 @@
     body.no-sidebar .sidebar,
     body.no-sidebar .sidebar-toggle { display: none; }
     body.no-sidebar .content { left: 0; transform: none; }
+
+    /* Home page: the web app call-out, above the fold */
+    .markdown-section .web-cta {
+      margin: 1.2em 0 2em;
+      padding: 1.6em 1.8em;
+      border: 2px solid var(--theme-color, #42b983);
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(66,185,131,.12), rgba(66,185,131,.02));
+    }
+    .markdown-section .web-cta p { margin: .4em 0; }
+    .markdown-section .web-cta-badge {
+      display: inline-block;
+      padding: .2em .7em;
+      border-radius: 999px;
+      background: var(--theme-color, #42b983);
+      color: #fff;
+      font-size: .8em;
+      font-weight: 600;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    .markdown-section .web-cta-title {
+      font-size: 1.7em;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #2c3e50;
+    }
+    .markdown-section .web-cta-text { font-size: 1.05em; max-width: 40em; }
+    .markdown-section a.web-cta-button {
+      display: inline-block;
+      margin: .7em 0 .5em;
+      padding: .7em 1.4em;
+      border-radius: 8px;
+      background: var(--theme-color, #42b983);
+      color: #fff;
+      font-size: 1.25em;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    .markdown-section a.web-cta-button:hover { filter: brightness(1.08); }
+    .markdown-section .web-cta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4em 1.6em;
+      margin: .6em 0;
+      padding: 0;
+      list-style: none;
+    }
+    .markdown-section .web-cta-list li { margin: 0; }
+    .markdown-section .web-cta-list li::before {
+      content: "\2713\00a0";
+      color: var(--theme-color, #42b983);
+      font-weight: 700;
+    }
+    .markdown-section .web-cta-more { font-size: .9em; color: #616161; }
   </style>
 </head>
 <body>
